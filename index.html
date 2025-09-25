@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Email Template Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">📧 <span class="brand">Email Template Maker</span></div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls-row">
+      <div class="left-controls">
+        <label for="category">Category</label>
+        <select id="category"><option value="All">All</option></select>
+      </div>
+      <select id="lang-select">
+  <option value="en">English</option>
+  <option value="ja">日本語</option>
+</select>
+
+
+      <div class="right-controls">
+        <label>Total Templates: <span id="template-count">0</span></label>
+        <label for="search">Search</label>
+        <input id="search" placeholder="Search by subject, body or keyword (e.g. battery assessment)" />
+      </div>
+    </section>
+
+    <section id="loading" class="loading">
+      <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+      <div id="progress-text" class="progress-text">Loading… 0%</div>
+      <div id="loading-msg" class="loading-msg"></div>
+    </section>
+
+    <section id="list" class="grid"></section>
+
+    <footer class="footer">
+      <small>Local test · Data fetched from a public API + local fallback templates</small>
+    </footer>
+  </main>
+<script src="templates.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
