@@ -635,5 +635,183 @@ An inventory audit will take place in [Location] on [Date].
 Please ensure all equipment and devices are accounted for.
 
 Best regards.`
+},
+// 🔹 Procurement & Asset Management
+{
+  id: "proc-001",
+  subject: "Procurement Request Acknowledgement",
+  category: "Procurement",
+  body: `Sir / Madam,
+
+Good day!
+
+We have received your procurement request for [Item/Service].  
+Our team will review the specifications and provide feedback within [X days].
+
+Best regards.`
+},
+{
+  id: "proc-002",
+  subject: "Asset Disposal Approval",
+  category: "Procurement",
+  body: `Sir / Madam,
+
+Good day!
+
+Your request to dispose of [Asset/Device] has been approved.  
+Please coordinate with the IT and Admin departments for proper disposal documentation.
+
+Best regards.`
+},
+{
+  id: "proc-003",
+  subject: "Delivery Confirmation",
+  category: "Procurement",
+  body: `Sir / Madam,
+
+Good day!
+
+This is to confirm that the requested item [Item Name] has been delivered to [Location/Employee].  
+Kindly acknowledge receipt.
+
+Best regards.`
+},
+
+// 🔹 Training & Knowledge
+{
+  id: "train-001",
+  subject: "Mandatory Training Invitation",
+  category: "Training",
+  body: `Dear Team,
+
+You are required to attend the mandatory training session on [Topic] scheduled for [Date/Time].  
+Please confirm your attendance via the attached form.
+
+Best regards.`
+},
+{
+  id: "train-002",
+  subject: "Training Completion Certificate",
+  category: "Training",
+  body: `Dear [Employee],
+
+Congratulations on successfully completing the [Training Topic] program.  
+Please find your certificate attached.
+
+Best regards.`
+},
+
+// 🔹 Compliance & Audit
+{
+  id: "audit-001",
+  subject: "Internal Audit Notification",
+  category: "Compliance",
+  body: `Dear Team,
+
+An internal audit will be conducted on [Date/Time] at [Department/Location].  
+Please prepare all necessary records and documentation for review.
+
+Best regards.`
+},
+{
+  id: "audit-002",
+  subject: "Policy Compliance Reminder",
+  category: "Compliance",
+  body: `Sir / Madam,
+
+Good day!
+
+This is a reminder to comply with company policy on [Policy Name].  
+Please review the guidelines to avoid non-compliance.
+
+Best regards.`
+},
+
+// 🔹 Client Communication
+{
+  id: "cli-001",
+  subject: "Client Onboarding Welcome",
+  category: "Client",
+  body: `Dear [Client Name],
+
+Welcome to [Company Name].  
+We are delighted to begin working with you and look forward to a successful partnership.  
+
+Attached is your onboarding kit with all required details.
+
+Best regards.`
+},
+{
+  id: "cli-002",
+  subject: "Service Interruption Notice",
+  category: "Client",
+  body: `Dear [Client Name],
+
+Please be informed that service [Service Name] will be temporarily unavailable on [Date/Time] due to scheduled maintenance.  
+We apologize for any inconvenience and appreciate your understanding.
+
+Best regards.`
+},
+{
+  id: "cli-003",
+  subject: "Quarterly Review Invitation",
+  category: "Client",
+  body: `Dear [Client Name],
+
+We would like to schedule a quarterly business review to discuss performance, feedback, and future improvements.  
+Please provide your availability.
+
+Best regards.`
+},
+
+// 🔹 Events & Announcements
+{
+  id: "evt-001",
+  subject: "Town Hall Meeting Invitation",
+  category: "Events",
+  body: `Dear Team,
+
+You are invited to attend the upcoming Town Hall Meeting on [Date/Time].  
+Agenda: [List Key Points].
+
+We look forward to your participation.
+
+Best regards.`
+},
+{
+  id: "evt-002",
+  subject: "Company Event Announcement",
+  category: "Events",
+  body: `Dear Team,
+
+We are excited to announce the upcoming [Event Name] scheduled for [Date].  
+Further details will follow shortly.
+
+Best regards.`
+},
+
+// 🔹 IT Preventive Maintenance
+{
+  id: "maint-001",
+  subject: "Preventive Maintenance Schedule",
+  category: "Maintenance",
+  body: `Dear Team,
+
+Please be informed that preventive maintenance for [System/Equipment] will take place on [Date/Time].  
+Services may be intermittently unavailable during this period.
+
+Thank you for your cooperation.`
+},
+{
+  id: "maint-002",
+  subject: "Maintenance Completion Notice",
+  category: "Maintenance",
+  body: `Dear Team,
+
+The preventive maintenance for [System/Equipment] has been successfully completed.  
+All systems are now operational.
+
+Best regards.`
 }
+
 ];
