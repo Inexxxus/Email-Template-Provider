@@ -9,7 +9,7 @@ let templates = [];
 let displayed = [];
 let targetLang = "en"; // default language
 
-// UI elements (assume these exist in your index.html)
+// UI elements
 const listEl = document.getElementById("list");
 const categorySel = document.getElementById("category");
 const searchInput = document.getElementById("search");
@@ -27,17 +27,15 @@ let modalNextBtn = null;
 let modalCloseBtn = null;
 let modalCopyBtn = null;
 
-// Ensure the template count UI exists (insert before search input if missing)
+// Ensure the template count UI exists
 function ensureCountDisplay() {
   if (!document.getElementById("template-count")) {
     const wrapper = document.createElement("div");
     wrapper.className = "count-display";
     wrapper.innerHTML = `<label>Total Templates: <span id="template-count">0</span></label>`;
-    // try to insert before search input
     if (searchInput && searchInput.parentNode) {
       searchInput.parentNode.insertBefore(wrapper, searchInput);
     } else {
-      // fallback: prepend to body.wrap if present
       const wrap = document.querySelector(".wrap") || document.body;
       wrap.insertBefore(wrapper, wrap.firstChild);
     }
@@ -67,7 +65,7 @@ async function translateTextForce(text, lang = "en") {
   }
 }
 
-// Populate categories dropdown
+// Populate categories
 function populateCategories() {
   const set = new Set(["All"]);
   templates.forEach(t => set.add(t.category || "General"));
@@ -80,7 +78,7 @@ function populateCategories() {
   });
 }
 
-// Escape HTML to avoid injection
+// Escape HTML
 function escapeHtml(str) {
   return String(str || "")
     .replace(/&/g, "&amp;")
@@ -90,39 +88,34 @@ function escapeHtml(str) {
     .replace(/'/g, "&#039;");
 }
 
-// Create a card (with preview). idx is index in displayed[]
+// Create a card (full details inside, scrollable if long)
 function createCard(t, idx) {
   const card = document.createElement("article");
   card.className = "card";
-  // make a short preview text
-  const previewText = (t.body || "").length > 140 ? (t.body.slice(0, 140) + "…") : t.body;
 
   card.innerHTML = `
     <h3>${escapeHtml(t.subject)}</h3>
     <div class="badge">${escapeHtml(t.category || "General")}</div>
     <div class="card-preview">
-      <p class="greeting">${targetLang === "en" ? "Good day Sir/Ma'am," : "ご担当者様"}</p>
-      <p class="preview-body">${escapeHtml(previewText)}</p>
-      <p class="closing">${targetLang === "en" ? "Best regards," : "よろしくお願いいたします"}</p>
+      <pre class="preview-body">${escapeHtml(t.body)}</pre>
     </div>
     <div class="copy-icon" title="Copy email">🗐</div>
   `;
 
-  // Card click opens modal, but clicking copy-icon should not open modal
+  // Open modal
   card.addEventListener("click", (e) => {
     if (e.target.closest(".copy-icon")) return;
     openModalByIndex(idx);
   });
 
-  // Copy button behavior: stop propagation and copy the full email
+  // Copy button
   const copyBtn = card.querySelector(".copy-icon");
   copyBtn.addEventListener("click", async (e) => {
     e.stopPropagation();
     const btn = e.currentTarget;
-    const full = `Subject: ${t.subject}\n\n${targetLang === "en" ? "Good day Sir/Ma'am," : "ご担当者様"}\n\n${t.body}\n\n${targetLang === "en" ? "Best regards," : "よろしくお願いいたします"}\n[Your Name]`;
+    const full = `Subject: ${t.subject}\n\n${t.body}\n\n[Your Name]`;
     try {
       await navigator.clipboard.writeText(full);
-      // show copied state
       btn.textContent = "✓ Copied";
       btn.classList.add("copied");
       setTimeout(() => {
@@ -138,7 +131,7 @@ function createCard(t, idx) {
   return card;
 }
 
-// Update template count display: "showing X / Y"
+// Update template count
 function updateCount() {
   const countEl = document.getElementById("template-count");
   if (countEl) {
@@ -148,7 +141,7 @@ function updateCount() {
   }
 }
 
-// Render list of cards based on filter/search
+// Render list
 function renderList(filterCategory = "All", search = "") {
   listEl.innerHTML = "";
   const q = (search || "").toLowerCase();
@@ -171,7 +164,7 @@ function renderList(filterCategory = "All", search = "") {
   });
 }
 
-// Modal creation (create once)
+// Modal setup
 function ensureModal() {
   if (modalEl) return;
 
@@ -197,14 +190,13 @@ function ensureModal() {
   modalCloseBtn = modalEl.querySelector("#modal-close");
   modalCopyBtn = modalEl.querySelector("#modal-copy");
 
-  // handlers
   modalCloseBtn.addEventListener("click", closeModal);
   modalPrevBtn.addEventListener("click", showPrevModal);
   modalNextBtn.addEventListener("click", showNextModal);
   modalCopyBtn.addEventListener("click", async () => {
     if (modalIndex < 0 || !displayed[modalIndex]) return;
     const t = displayed[modalIndex];
-    const full = `Subject: ${t.subject}\n\n${targetLang === "en" ? "Good day Sir/Ma'am," : "ご担当者様"}\n\n${t.body}\n\n${targetLang === "en" ? "Best regards," : "よろしくお願いいたします"}\n[Your Name]`;
+    const full = `Subject: ${t.subject}\n\n${t.body}\n\n[Your Name]`;
     try {
       await navigator.clipboard.writeText(full);
       modalCopyBtn.textContent = "✓ Copied";
@@ -215,12 +207,10 @@ function ensureModal() {
     }
   });
 
-  // close modal by clicking overlay
   modalEl.addEventListener("click", (e) => {
     if (e.target === modalEl) closeModal();
   });
 
-  // keyboard navigation
   document.addEventListener("keydown", (e) => {
     if (!modalEl || modalEl.style.display !== "flex") return;
     if (e.key === "Escape") closeModal();
@@ -229,7 +219,7 @@ function ensureModal() {
   });
 }
 
-// Open modal to display item at displayed[index]
+// Modal navigation
 function openModalByIndex(index) {
   if (index < 0 || index >= displayed.length) return;
   ensureModal();
@@ -238,7 +228,6 @@ function openModalByIndex(index) {
   modalEl.style.display = "flex";
 }
 
-// Show modal content for modalIndex
 function showModal() {
   if (modalIndex < 0 || modalIndex >= displayed.length) return;
   const t = displayed[modalIndex];
@@ -246,19 +235,15 @@ function showModal() {
     <h2>${escapeHtml(t.subject)}</h2>
     <div class="badge">${escapeHtml(t.category || "General")}</div>
     <div class="modal-body">
-      <p class="greeting">${targetLang === "en" ? "Good day Sir/Ma'am," : "ご担当者様"}</p>
       <pre class="full-body">${escapeHtml(t.body)}</pre>
-      <p class="closing">${targetLang === "en" ? "Best regards," : "よろしくお願いいたします"}<br>[Your Name]</p>
+      <p>[Your Name]</p>
     </div>
   `;
-  // update prev/next disable state
   modalPrevBtn.disabled = modalIndex <= 0;
   modalNextBtn.disabled = modalIndex >= (displayed.length - 1);
-  // ensure copy button text reset
   modalCopyBtn.textContent = "Copy Email";
 }
 
-// Prev / Next handlers
 function showPrevModal() {
   if (modalIndex > 0) {
     modalIndex--;
@@ -277,14 +262,14 @@ function closeModal() {
   modalIndex = -1;
 }
 
-// Load templates from templates.js (and translate)
+// Load templates
 async function fetchTemplates() {
   loadingSection.style.display = "block";
   if (progressBar()) progressBar().style.width = "0%";
-  if (progressText()) progressText().textContent = targetLang === "en" ? "Loading templates…" : "テンプレートを読み込み中…";
+  if (progressText()) progressText().textContent =
+    targetLang === "en" ? "Loading templates…" : "テンプレートを読み込み中…";
 
   try {
-    // translate each template's subject and body
     templates = await Promise.all(customTemplates.map(async t => {
       const subject = await translateTextForce(t.subject, targetLang);
       const body = await translateTextForce(t.body, targetLang);
@@ -292,11 +277,12 @@ async function fetchTemplates() {
     }));
 
     if (progressBar()) progressBar().style.width = "100%";
-    if (progressText()) progressText().textContent = targetLang === "en" ? "Done" : "完了";
+    if (progressText()) progressText().textContent =
+      targetLang === "en" ? "Done" : "完了";
     loadingSection.style.display = "none";
   } catch (err) {
     console.error("Failed to load templates:", err);
-    templates = [...customTemplates]; // fallback
+    templates = [...customTemplates];
     loadingSection.style.display = "none";
   }
 
