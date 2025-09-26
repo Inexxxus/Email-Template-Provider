@@ -194,7 +194,9 @@ CORRECTIVE MEASURES:
 • Root Cause Analysis: [Findings]
 • Preventive Steps: [Future Actions]
 
-Please respond with acknowledgment.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please respond with acknowledgment.${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   // 🏥 Healthcare Templates
@@ -226,7 +228,9 @@ ACTION REQUIRED:
 • Documentation: [Updates Required]
 • Special Handling: [Instructions]
 
-${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   // 🏦 Financial Services Templates
@@ -261,7 +265,9 @@ RECOMMENDATIONS:
 • Training Needs: [Requirements]
 • System Updates: [Modifications]
 
-${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   // 🔬 Research & Laboratory Templates
@@ -298,7 +304,9 @@ DATA STORAGE:
 • Format: [File Types]
 • Access: [Permissions]
 
-${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   // 🤼 Cross-Departmental Templates
@@ -337,7 +345,9 @@ TIMELINE:
 
 Next Meeting: [Date/Time]
 
-${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
   // � Hardware Management
   {
@@ -466,7 +476,6 @@ Attachments:
 4. Vendor Quotations
 
 Best regards,
-[Name]
 [Position]
 [Department]
 [Contact Information]`
@@ -492,7 +501,9 @@ ACTION NEEDED:
 • [Key Action Items]
 • Timeline: [Date]
 
-Cost Estimate: [Amount]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+Cost Estimate: [Amount]${EMAIL_CONSTANTS.SHORT_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -511,7 +522,9 @@ WORK DONE:
 • Parts Used: [If Any]
 
 Status: [Working/Pending]
-Next Steps: [If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+Next Steps: [If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}
+
+Best regards.`
   },
 
   // 💻 Quick Software Reports
@@ -527,7 +540,9 @@ DETAILS:
 • License: [Type]
 
 Status: [Success/Issues]
-Notes: [Any Special Instructions]${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}`
+Notes: [Any Special Instructions]${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}
+
+Best regards.`
   },
 
   // 🔒 Security Briefs
@@ -570,7 +585,9 @@ KEY POINTS:
 • [Next Steps]
 
 Needs Attention:
-[If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+[If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}
+
+Best regards.`
   },
 
   // 💰 Quick Budget
@@ -587,7 +604,9 @@ NEED BY: [Date]
 JUSTIFICATION:
 [Brief Reason]
 
-Cost Center: [Code]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+Cost Center: [Code]${EMAIL_CONSTANTS.SHORT_SIGNATURE}
+
+Best regards.`
   },
 
   // 📅 Brief Meeting Notes
@@ -622,7 +641,9 @@ KEY FEEDBACK:
 • [Positive Point]
 • [Area for Improvement]
 
-Suggestions: [Brief Notes]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+Suggestions: [Brief Notes]${EMAIL_CONSTANTS.SHORT_SIGNATURE}
+
+Best regards.`
   },
 
   // � Facility Management
@@ -658,8 +679,7 @@ Contact Person:
 [Department]
 [Phone/Extension]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 🏠 Remote Work Management
@@ -688,7 +708,9 @@ WORK PLAN:
 JUSTIFICATION:
 [Brief Explanation]
 
-Manager: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Manager: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -720,7 +742,9 @@ SECURITY MEASURES:
 • Password Policy: [Confirmed]
 • Data Protection: [Measures]
 
-Any issues or needs:${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Any issues or needs:${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -754,7 +778,9 @@ PREPARATION:
 Notes:
 - Please join 5 minutes early
 - Keep microphone muted when not speaking
-- Use headphones if possible${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+- Use headphones if possible${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -784,7 +810,9 @@ YOUR TEAM:
 • Technical Support: [Contact]
 • Implementation Lead: [Name]
 
-Please don't hesitate to reach out with any questions!${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please don't hesitate to reach out with any questions!${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -815,7 +843,9 @@ USAGE EXPERIENCE:
 
 Your feedback helps us improve our service!
 
-Take our detailed survey: [Survey Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Take our detailed survey: [Survey Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -845,7 +875,9 @@ PERMISSIONS:
 • Quote Attribution: [Yes/No]
 • Logo Usage: [Yes/No]
 
-We'll send you a draft for review before publishing.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+We'll send you a draft for review before publishing.${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -876,7 +908,9 @@ SUCCESS METRICS:
 • Secondary KPIs: [List]
 • Benchmark Goals: [Targets]
 
-Timeline for approval needed: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Timeline for approval needed: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -912,7 +946,9 @@ KEY INSIGHTS:
 • Areas for Improvement: [List]
 • Recommendations: [Actions]
 
-Full report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Full report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -942,7 +978,9 @@ THEMES & MESSAGING:
 • Target Keywords: [List]
 • Call-to-Actions: [List]
 
-Please provide feedback by: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please provide feedback by: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -981,7 +1019,9 @@ COMPLIANCE & RISK:
 RECOMMENDATION:
 • Continue/Modify/Terminate
 • Action Items: [List]
-• Timeline: [Dates]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+• Timeline: [Dates]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1014,7 +1054,9 @@ BUSINESS IMPACT:
 • Service Impact: [Assessment]
 • Risk Factors: [List]
 
-Please review and approve by: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Please review and approve by: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1044,7 +1086,9 @@ REQUESTED ACTION:
 2. [Follow-up Steps]
 3. [Prevention Plan]
 
-Please acknowledge and provide ETA for resolution.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please acknowledge and provide ETA for resolution.${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1074,7 +1118,9 @@ ACTION REQUIRED:
 • Review Process: [Steps]
 • Delivery Method: [Format]
 
-Please acknowledge receipt and confirm timeline.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please acknowledge receipt and confirm timeline.${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1110,7 +1156,9 @@ RECOMMENDATIONS:
 2. [Key Finding 2]
 3. [Key Finding 3]
 
-Required Actions: [List]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Required Actions: [List]${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1148,7 +1196,9 @@ ASSESSMENT AREAS:
 ACTIONS REQUIRED:
 1. [Priority Action 1]
 2. [Priority Action 2]
-3. [Priority Action 3]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+3. [Priority Action 3]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1189,7 +1239,9 @@ Response Plan:
 2. [Short-term Action]
 3. [Long-term Prevention]
 
-URGENT: Respond with acknowledgment${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+URGENT: Respond with acknowledgment${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1218,7 +1270,9 @@ ACTION ITEMS:
 2. [Improvement Area 2]
 3. [Improvement Area 3]
 
-Next Review Date: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Next Review Date: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1254,7 +1308,9 @@ RECOMMENDATIONS:
 • Implementation: [Plan]
 • Next Tests: [Ideas]
 
-Detailed report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Detailed report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1283,7 +1339,9 @@ NEXT STEPS:
 2. Action Items: [List]
 3. Goals for Next Quarter: [Objectives]
 
-Please confirm your availability for the review call.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+Please confirm your availability for the review call.${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+
+Best regards.`
   },
 
   {
@@ -1311,7 +1369,9 @@ SYSTEM INFO:
 URGENCY:
 [Impact Level]
 
-Available for troubleshooting:${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Available for troubleshooting:${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   // 📱 Mobile Device Management
@@ -1344,8 +1404,7 @@ SECURITY SETTINGS:
 • Data Encryption: [Required/Optional]
 • Remote Wipe: [Enabled/Disabled]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 🌐 Cloud Services Management
@@ -1375,7 +1434,9 @@ BUSINESS JUSTIFICATION:
 [Explain Need]
 
 Cost Center: [Code]
-Manager Approval: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+Manager Approval: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}
+
+Best regards.`
   },
 
   // 🔬 Research & Development
@@ -1412,6 +1473,7 @@ ROI PROJECTION:
 • Market Impact: [Analysis]
 • Risk Assessment: [Factors]
 
+Best regards.
 ${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
   },
 
@@ -1444,8 +1506,7 @@ TIMELINE:
 • Final Delivery: [Date]
 • Review Cycles: [Number]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 🤖 Automation & Workflows
@@ -1478,8 +1539,7 @@ STAKEHOLDERS:
 • End Users: [Groups]
 • Systems Team: [Contact]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 📊 Data Analytics
@@ -1512,8 +1572,7 @@ TIMELINE:
 • Required By: [Date]
 • Milestone Reviews: [Checkpoints]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 🔐 Identity & Access Management
@@ -1547,8 +1606,7 @@ SECURITY REQUIREMENTS:
 • Compliance: [Standards]
 • Training Required: [Yes/No]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // 🎓 Learning & Development
@@ -1582,8 +1640,7 @@ BUDGET:
 • Total Budget: [Amount]
 • Cost Center: [Code]
 
-Regards,
-[Requestor]`
+Regards,`
   },
 
   // �🎫 Support & Ticketing
@@ -1608,6 +1665,7 @@ NEXT STEPS:
 
 Urgent matters: [Emergency Contact]
 
+Best regards.
 [Signature]
 [Title]
 [Department]`
@@ -1638,8 +1696,9 @@ Your feedback helps us improve. Please take a moment to rate our service:
 
 Thank you for your cooperation.
 
+Best regards.
 ${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}
-[Company Name]`
+`
   },
   {
     id: "sup-003",
@@ -1673,9 +1732,7 @@ Incident Manager: [Name/Contact]
 
 We appreciate your patience and understanding.
 
-Regards,
-[IT Operations Team]
-[Company Name]`
+Regards,`
   },
 
   // � Hardware Management
@@ -1755,6 +1812,7 @@ Attachments:
 2. Cost Analysis
 3. Vendor Quotations
 4. Performance Logs`
+
   },
 
   // �🔹 IT Hardware Assessments
@@ -1800,6 +1858,7 @@ NEXT STEPS:
 
 For procurement processing, please reference this report number: [Report-ID]
 
+Best regards.
 ${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}
 [Company Name]`
   },
@@ -1872,8 +1931,7 @@ RECOMMENDATIONS:
 
 Please let us know if you need any clarification or have additional questions.
 
-Best regards,
-[IT Support Name]`
+Best regards,`
   },
 
   {
@@ -1905,8 +1963,7 @@ RECOMMENDATIONS:
 - [Suggest performance optimizations]
 - [Include maintenance schedule]
 
-Best regards,
-[IT Support Name]`
+Best regards,`
   },
 
   {
@@ -1939,8 +1996,7 @@ RECOMMENDATIONS:
 - [Backup strategy improvements]
 - [Security enhancement recommendations]
 
-Best regards,
-[IT Support Name]`
+Best regards,`
   },
 
   {
@@ -1973,8 +2029,7 @@ RECOMMENDATIONS:
 - [Capacity upgrade needs]
 - [Environmental improvements]
 
-Best regards,
-[IT Support Name]`
+Best regards,`
   },
 
   {
@@ -2006,8 +2061,7 @@ RECOMMENDATIONS:
 - [Security improvements]
 - [Procurement timeline]
 
-Best regards,
-[IT Support Name]`
+Best regards,`
   },
 
   {
@@ -2040,8 +2094,7 @@ RECOMMENDATIONS:
 - [Capacity planning suggestions]
 - [Emergency procedure updates]
 
-Best regards,
-[IT Support Name]`
+Best regards`
   },
 
   {
@@ -2172,6 +2225,7 @@ NEXT STEPS:
 
 Please review and provide your approval for the recommended actions.
 
+Best regards.
 ${EMAIL_CONSTANTS.POSITION_SIGNATURE}
 [IT Infrastructure Team]
 [Company Name]`
@@ -2269,7 +2323,8 @@ Good day!
 Please find attached invoice #[ID] for [Services].  
 Payment is due by [Date].  
 
-Thank you.`
+Thank you.
+Best regards.`
   },
   {
     id: "fin-002",
@@ -2419,7 +2474,8 @@ Good day!
 A new security patch will be deployed on [Date/Time].  
 Please save your work as your device may reboot automatically during the update.  
 
-Thank you for your cooperation.`
+Thank you for your cooperation.
+Best regards.`
   },
   {
     id: "sec-003",
@@ -2502,7 +2558,9 @@ Good day!
 
 This is a reminder to submit your assigned device [Device ID] for routine IT check-up scheduled on [Date/Time].  
 
-Thank you for your cooperation.`
+Thank you for your cooperation.
+Best regards.`
+
   },
   {
     id: "rem-003",
