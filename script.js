@@ -99,7 +99,7 @@ function createCard(t, idx) {
     <div class="card-preview">
       <pre class="preview-body">${escapeHtml(t.body)}</pre>
     </div>
-    <div class="copy-icon" title="Copy email">🗐</div>
+    <div class="copy-icon" title="Copy">🗐</div>
   `;
 
   // Open modal
@@ -109,24 +109,25 @@ function createCard(t, idx) {
   });
 
   // Copy button
-  const copyBtn = card.querySelector(".copy-icon");
-  copyBtn.addEventListener("click", async (e) => {
-    e.stopPropagation();
-    const btn = e.currentTarget;
-    const full = `Subject: ${t.subject}\n\n${t.body}\n\n[Your Name]`;
-    try {
-      await navigator.clipboard.writeText(full);
-      btn.textContent = "✓ Copied";
-      btn.classList.add("copied");
-      setTimeout(() => {
-        btn.textContent = "🗐";
-        btn.classList.remove("copied");
-      }, 2000);
-    } catch (err) {
-      console.error("Copy failed:", err);
-      alert("Copy failed. Please copy manually.");
-    }
-  });
+const copyBtn = card.querySelector(".copy-icon");
+copyBtn.addEventListener("click", async (e) => {
+  e.stopPropagation();
+  const btn = e.currentTarget;
+  const full = `${t.subject}\n\n${t.body}`; // ✅ define full text here
+  try {
+    await navigator.clipboard.writeText(full);
+    btn.textContent = "✓ Copied";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "🗐";
+      btn.classList.remove("copied");
+    }, 2000);
+  } catch (err) {
+    console.error("Copy failed:", err);
+    alert("Copy failed. Please copy manually.");
+  }
+});
+
 
   return card;
 }
@@ -176,9 +177,9 @@ function ensureModal() {
       <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
       <div id="modal-content" class="modal-content"></div>
       <div class="modal-actions">
-        <button id="modal-prev" class="modal-nav">← Prev</button>
-        <button id="modal-copy" class="modal-copy">Copy Email</button>
-        <button id="modal-next" class="modal-nav">Next →</button>
+        <button id="modal-prev" class="modal-nav"> ← </button>
+        <button id="modal-copy" class="modal-copy">Copy</button>
+        <button id="modal-next" class="modal-nav"> → </button>
       </div>
     </div>
   `;
@@ -194,18 +195,19 @@ function ensureModal() {
   modalPrevBtn.addEventListener("click", showPrevModal);
   modalNextBtn.addEventListener("click", showNextModal);
   modalCopyBtn.addEventListener("click", async () => {
-    if (modalIndex < 0 || !displayed[modalIndex]) return;
-    const t = displayed[modalIndex];
-    const full = `Subject: ${t.subject}\n\n${t.body}\n\n[Your Name]`;
-    try {
-      await navigator.clipboard.writeText(full);
-      modalCopyBtn.textContent = "✓ Copied";
-      setTimeout(() => (modalCopyBtn.textContent = "Copy Email"), 2000);
-    } catch (err) {
-      console.error("Copy failed in modal:", err);
-      alert("Copy failed. Please copy manually.");
-    }
-  });
+  if (modalIndex < 0 || !displayed[modalIndex]) return;
+  const t = displayed[modalIndex];
+  const full = `${t.subject}\n\n${t.body}`; // ✅ define full text here
+  try {
+    await navigator.clipboard.writeText(full);
+    modalCopyBtn.textContent = "✓ Copied";
+    setTimeout(() => (modalCopyBtn.textContent = "Copy"), 2000);
+  } catch (err) {
+    console.error("Copy failed in modal:", err);
+    alert("Copy failed. Please copy manually.");
+  }
+});
+
 
   modalEl.addEventListener("click", (e) => {
     if (e.target === modalEl) closeModal();
@@ -236,12 +238,11 @@ function showModal() {
     <div class="badge">${escapeHtml(t.category || "General")}</div>
     <div class="modal-body">
       <pre class="full-body">${escapeHtml(t.body)}</pre>
-      <p>[Your Name]</p>
     </div>
   `;
   modalPrevBtn.disabled = modalIndex <= 0;
   modalNextBtn.disabled = modalIndex >= (displayed.length - 1);
-  modalCopyBtn.textContent = "Copy Email";
+  modalCopyBtn.textContent = "Copy";
 }
 
 function showPrevModal() {
