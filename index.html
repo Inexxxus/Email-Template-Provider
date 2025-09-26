@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Email Template Maker</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/document.png"> -->
+
 </head>
 <body>
   <header class="topbar">
@@ -22,7 +24,7 @@
   <option value="ja">日本語</option>
 </select>
 
- 
+
       <div class="right-controls">
         <label>Total Templates: <span id="template-count">0</span></label>
         <label for="search">Search</label>
@@ -44,5 +46,18 @@
   </main>
 <script src="templates.js"></script>
   <script src="script.js"></script>
+  <script>
+  const favicon = document.createElement("canvas");
+  favicon.width = 64;
+  favicon.height = 64;
+
+  const ctx = favicon.getContext("2d");
+  ctx.font = "48px serif"; // adjust font
+  ctx.fillText("🗐", 24, 48);
+
+  const link = document.createElement("link");
+  link.rel = "icon";
+  link.href = favicon.toDataURL("image/png");
+  document.head.appendChild(link);</script>
 </body>
 </html>
