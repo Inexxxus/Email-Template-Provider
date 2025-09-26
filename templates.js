@@ -1,72 +1,1120 @@
 // templates.js
-// Master Email Templates for IT Support + General Company Use
+// Comprehensive Email Template Library for Professional Communications
+// Version 2.0 - Enhanced with Industry-Specific and Cross-Departmental Templates
+
+// Common email template constants
+const EMAIL_CONSTANTS = {
+  // Basic salutations
+  SHORT_SALUTATION: 'Dear [Name],\n\n',
+  TEAM_SALUTATION: 'Dear Team,\n\n',
+  DEPARTMENT_SALUTATION: 'Dear [Department] Team,\n\n',
+  
+  // Basic signatures
+  SHORT_SIGNATURE: '\n\nRegards,\n[Name]',
+  POSITION_SIGNATURE: '\n\nRegards,\n[Name]\n[Position]',
+  DEPARTMENT_SIGNATURE: '\n\nRegards,\n[Name]\n[Department]',
+  FULL_SIGNATURE: '\n\nRegards,\n[Name]\n[Position]\n[Department]\n[Contact Information]'
+};
+
+/*
+Category Structure:
+1. 🔧 Hardware Management
+   - Device Assessment
+   - Replacements
+   - Maintenance
+   - Disposal
+2. 💻 Software & Systems
+   - Installation
+   - Updates
+   - Licensing
+   - Access Management
+3. 🌐 Network & Infrastructure
+   - Connectivity
+   - Security
+   - Performance
+   - Maintenance
+4. 🎫 Support & Service Desk
+   - Tickets
+   - Incidents
+   - Requests
+   - Notifications
+5. 📊 Reports & Assessments
+   - Performance
+   - Compliance
+   - Audits
+   - Reviews
+6. 👥 HR & Personnel
+   - Onboarding
+   - Training
+   - Equipment
+   - Access
+7. 💰 Finance & Procurement
+   - Purchases
+   - Approvals
+   - Budgets
+   - Assets
+8. 📅 Project Management
+   - Planning
+   - Status
+   - Meetings
+   - Deliverables
+9. 🔒 Security & Compliance
+   - Incidents
+   - Policies
+   - Audits
+   - Training
+10. 🤝 Client Relations
+    - Updates
+    - Services
+    - Support
+    - Reviews
+
+11. 🏭 Manufacturing
+    - Quality Control
+    - Production Planning
+    - Inventory Management
+    - Equipment Maintenance
+
+12. 🏥 Healthcare
+    - Patient Care
+    - Medical Equipment
+    - Compliance
+    - Staff Scheduling
+
+13. 🏦 Financial Services
+    - Risk Assessment
+    - Compliance Reports
+    - Audit Trails
+    - Client Management
+
+14. 🛍️ Retail Operations
+    - Inventory Updates
+    - Store Management
+    - Customer Service
+    - Sales Reports
+
+15. 🏗️ Construction Projects
+    - Site Reports
+    - Safety Compliance
+    - Material Management
+    - Progress Updates
+
+16. 📚 Education Sector
+    - Course Management
+    - Student Services
+    - Faculty Resources
+    - Academic Planning
+
+17. 🔬 Research & Laboratory
+    - Experiment Reports
+    - Lab Safety
+    - Equipment Requests
+    - Research Proposals
+
+18. 🤖 Technology Innovation
+    - Product Development
+    - Testing Reports
+    - Feature Requests
+    - Release Notes
+
+19. 🤼 Cross-Departmental
+    - Project Collaboration
+    - Resource Sharing
+    - Joint Initiatives
+    - Team Integration
+
+20. 🌐 Global Operations
+    - International Coordination
+    - Cultural Adaptation
+    - Regional Compliance
+    - Market Entry
+*/
 
 const customTemplates = [
-  // 🔹 Support & Ticketing
+  // 🏭 Manufacturing Templates
+  {
+    id: "mfg-qc-001",
+    subject: "Quality Control Alert - [Product Line]",
+    category: "Manufacturing",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Quality control alert for [Product Line]:
+
+INSPECTION DETAILS:
+• Batch Number: [Batch ID]
+• Production Date: [Date]
+• Line Number: [Line ID]
+• Inspector: [Name]
+
+QUALITY ISSUES:
+• Deviation Type: [Issue Category]
+• Affected Units: [Number/Percentage]
+• Severity Level: [Critical/Major/Minor]
+
+IMMEDIATE ACTIONS:
+1. Production Status: [Halted/Modified]
+2. Quarantined Units: [Number]
+3. Investigation Status: [In Progress]
+
+CORRECTIVE MEASURES:
+• Immediate Fix: [Action Taken]
+• Root Cause Analysis: [Findings]
+• Preventive Steps: [Future Actions]
+
+Please respond with acknowledgment.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  // 🏥 Healthcare Templates
+  {
+    id: "health-equip-001",
+    subject: "Medical Equipment Maintenance Report",
+    category: "Healthcare",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Equipment maintenance report:
+
+EQUIPMENT DETAILS:
+• Device Name: [Equipment Name]
+• Serial Number: [S/N]
+• Department: [Location]
+• Certification: [Standard/Regulation]
+
+MAINTENANCE PERFORMED:
+• Type: [Routine/Emergency]
+• Procedures: [List of Tasks]
+• Parts Replaced: [Components]
+• Calibration: [Results]
+
+COMPLIANCE STATUS:
+• Safety Checks: [Pass/Fail]
+• Regulatory Standards: [Met/Not Met]
+• Next Inspection Due: [Date]
+
+ACTION REQUIRED:
+• Staff Training: [If Needed]
+• Documentation: [Updates Required]
+• Special Handling: [Instructions]
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  // 🏦 Financial Services Templates
+  {
+    id: "fin-compliance-001",
+    subject: "Regulatory Compliance Report - [Quarter]",
+    category: "Financial",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Quarterly compliance status report:
+
+REVIEW PERIOD:
+• Quarter: [Q1/Q2/Q3/Q4]
+• Year: [YYYY]
+• Division: [Department]
+
+COMPLIANCE METRICS:
+• Audits Completed: [Number]
+• Issues Identified: [Count]
+• Resolution Rate: [Percentage]
+
+KEY FINDINGS:
+1. [Major Finding 1]
+2. [Major Finding 2]
+3. [Major Finding 3]
+
+RISK ASSESSMENT:
+• High Risk Areas: [List]
+• Mitigation Plans: [Actions]
+• Monitoring Status: [Updates]
+
+RECOMMENDATIONS:
+• Policy Updates: [Changes]
+• Training Needs: [Requirements]
+• System Updates: [Modifications]
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  // 🔬 Research & Laboratory Templates
+  {
+    id: "lab-experiment-001",
+    subject: "Laboratory Experiment Report - [Project ID]",
+    category: "Research",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Experiment results summary:
+
+EXPERIMENT DETAILS:
+• Project ID: [Number]
+• Date: [Date]
+• Researcher: [Name]
+• Lab Location: [Room/Building]
+
+METHODOLOGY:
+• Protocol: [Reference]
+• Equipment Used: [List]
+• Controls: [Description]
+• Variables: [List]
+
+RESULTS:
+• Primary Findings: [Data]
+• Statistical Analysis: [Summary]
+• Anomalies: [If Any]
+
+CONCLUSIONS:
+• Key Outcomes: [Findings]
+• Implications: [Impact]
+• Next Steps: [Actions]
+
+DATA STORAGE:
+• Location: [Repository]
+• Format: [File Types]
+• Access: [Permissions]
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  // 🤼 Cross-Departmental Templates
+  {
+    id: "cross-proj-001",
+    subject: "Cross-Department Project Initiative - [Project Name]",
+    category: "Cross-Departmental",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Update on cross-departmental initiative:
+
+PROJECT OVERVIEW:
+• Name: [Project Title]
+• Objective: [Goal]
+• Timeline: [Duration]
+• Departments: [List]
+
+RESOURCE ALLOCATION:
+Department 1: [Name]
+• Lead: [Person]
+• Resources: [List]
+• Deliverables: [Items]
+
+Department 2: [Name]
+• Lead: [Person]
+• Resources: [List]
+• Deliverables: [Items]
+
+INTEGRATION POINTS:
+• Workflows: [Processes]
+• Systems: [Tools]
+• Data Sharing: [Methods]
+
+TIMELINE:
+• Phase 1: [Milestone]
+• Phase 2: [Milestone]
+• Phase 3: [Milestone]
+
+Next Meeting: [Date/Time]
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+  // � Hardware Management
+  {
+    id: "hw-assessment-001",
+    subject: "Comprehensive Hardware Assessment Report - [Device Type]",
+    category: "Hardware Management",
+    body: `Dear [Stakeholder],
+
+Please find below the detailed hardware assessment report.
+
+DEVICE IDENTIFICATION:
+Device Type: [Hardware Category]
+Manufacturer: [Brand]
+Model Name/Number: [Model]
+Serial Number: [S/N]
+Asset Tag: [Company Asset ID]
+MAC Address: [If Applicable]
+IP Address: [If Applicable]
+Firmware Version: [Version]
+Purchase Date: [Date]
+Warranty Status: [Details]
+
+HARDWARE SPECIFICATIONS:
+1. Processing Unit:
+   • CPU Model: [Details]
+   • Clock Speed: [Speed]
+   • Cores/Threads: [Count]
+   • Temperature: [°C]
+
+2. Memory:
+   • Total RAM: [Capacity]
+   • Type: [DDR4/DDR5]
+   • Speed: [MHz]
+   • Slots Used: [X/Y]
+
+3. Storage:
+   • Type: [SSD/HDD]
+   • Capacity: [Size]
+   • Health Status: [%]
+   • SMART Status: [Pass/Fail]
+
+4. Power Supply:
+   • Wattage: [W]
+   • Efficiency: [Rating]
+   • Status: [Condition]
+
+PERFORMANCE METRICS:
+1. System Performance:
+   • Boot Time: [Seconds]
+   • System Score: [Benchmark]
+   • Response Time: [ms]
+
+2. Resource Utilization:
+   • CPU Usage: [%]
+   • Memory Usage: [%]
+   • Disk Usage: [%]
+
+3. Temperature Readings:
+   • CPU: [°C]
+   • GPU: [°C]
+   • System: [°C]
+
+DIAGNOSTIC RESULTS:
+1. Hardware Tests:
+   • Memory Test: [Pass/Fail]
+   • Disk Check: [Pass/Fail]
+   • Network Test: [Pass/Fail]
+
+2. Issues Detected:
+   [List of Issues with Severity]
+
+3. Performance Bottlenecks:
+   [Identified Limitations]
+
+RECOMMENDATIONS:
+1. Critical Actions:
+   • [Immediate Actions Required]
+   • Priority: [High/Medium/Low]
+   • Timeline: [Required Completion Date]
+
+2. Maintenance Actions:
+   • [Regular Maintenance Tasks]
+   • Schedule: [Proposed Timeline]
+
+3. Upgrades Recommended:
+   • Component: [Details]
+   • Reason: [Justification]
+   • Cost Estimate: [Amount]
+
+COMPLIANCE & SECURITY:
+• Security Status: [Pass/Fail]
+• Compliance Level: [Standards Met]
+• Risk Assessment: [Risk Level]
+
+COST ANALYSIS:
+1. Immediate Costs:
+   • Required Parts: [List/Cost]
+   • Labor: [Estimate]
+
+2. Projected Costs:
+   • Maintenance: [Annual Estimate]
+   • Upgrades: [Future Requirements]
+
+NEXT STEPS:
+1. [Action Item 1]
+2. [Action Item 2]
+3. [Action Item 3]
+
+APPROVALS REQUIRED:
+• Department Head: [Name]
+• IT Manager: [Name]
+• Finance (if needed): [Name]
+
+Assessment Performed By:
+[Technician Name]
+[Certification/Position]
+[Contact Information]
+
+Date of Assessment: [Date]
+Next Assessment Due: [Date]
+
+Attachments:
+1. Diagnostic Reports
+2. Performance Graphs
+3. Cost Estimates
+4. Vendor Quotations
+
+Best regards,
+[Your Name]
+[Position]
+[Department]
+[Contact Information]`
+  },
+
+  {
+    id: "hw-assessment-short-001",
+    subject: "Quick Hardware Assessment - [Device Type]",
+    category: "Hardware Management",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Brief assessment summary for [Device Type]:
+
+DEVICE INFO:
+• Model: [Model Number]
+• Serial: [S/N]
+• Asset Tag: [ID]
+
+KEY FINDINGS:
+• Performance: [Status]
+• Issues Found: [Brief List]
+• Priority Level: [High/Medium/Low]
+
+ACTION NEEDED:
+• [Key Action Items]
+• Timeline: [Date]
+
+Cost Estimate: [Amount]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  {
+    id: "hw-repair-short-001",
+    subject: "Quick Repair Report - [Device Type]",
+    category: "Hardware Management",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Repair completed for [Device Type].
+
+DEVICE:
+• Asset ID: [Number]
+• Location: [Place]
+
+WORK DONE:
+• Issue: [Problem]
+• Solution: [Fix Applied]
+• Parts Used: [If Any]
+
+Status: [Working/Pending]
+Next Steps: [If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  // 💻 Quick Software Reports
+  {
+    id: "sw-install-short-001",
+    subject: "Software Installation Brief",
+    category: "Software",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Software installation completed.
+
+DETAILS:
+• Software: [Name]
+• Version: [Number]
+• License: [Type]
+
+Status: [Success/Issues]
+Notes: [Any Special Instructions]${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}`
+  },
+
+  // 🔒 Security Briefs
+  {
+    id: "sec-incident-short-001",
+    subject: "Security Incident Brief - [Type]",
+    category: "Security",
+    body: `SECURITY ALERT
+
+Incident Type: [Description]
+Time Detected: [Time]
+Status: [Active/Resolved]
+
+IMPACT:
+• Systems: [Affected Systems]
+• Users: [Number/Groups]
+
+ACTIONS:
+• [Immediate Steps]
+• [User Instructions]
+
+Contact [Security Team] if needed.
+
+Regards,
+Security Team`
+  },
+
+  // 📃 Quick Updates
+  {
+    id: "status-update-short-001",
+    subject: "Quick Status - [Project/Task]",
+    category: "Updates",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Quick update on [Project/Task]:
+
+STATUS: [On Track/Delayed/Complete]
+
+KEY POINTS:
+• [Achievement/Progress]
+• [Current Focus]
+• [Next Steps]
+
+Needs Attention:
+[If Any]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  // 💰 Quick Budget
+  {
+    id: "budget-short-001",
+    subject: "Quick Budget Request - [Item]",
+    category: "Finance",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Requesting budget approval:
+
+ITEM: [Description]
+COST: [Amount]
+NEED BY: [Date]
+
+JUSTIFICATION:
+[Brief Reason]
+
+Cost Center: [Code]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  // 📅 Brief Meeting Notes
+  {
+    id: "meeting-short-001",
+    subject: "Meeting Brief - [Topic]",
+    category: "Meetings",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Meeting summary for [Topic]:
+
+KEY POINTS:
+• [Point 1]
+• [Point 2]
+
+ACTION ITEMS:
+• [Task 1] - [Owner]
+• [Task 2] - [Owner]
+
+Next Meeting: [Date/Time]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  // 🎓 Quick Training
+  {
+    id: "training-short-001",
+    subject: "Training Feedback Brief",
+    category: "Training",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Feedback for [Training Name]:
+
+ATTENDANCE: [Number]
+RATING: [X/5]
+
+KEY FEEDBACK:
+• [Positive Point]
+• [Area for Improvement]
+
+Suggestions: [Brief Notes]${EMAIL_CONSTANTS.SHORT_SIGNATURE}`
+  },
+
+  // � Facility Management
+  {
+    id: "fac-maintenance-001",
+    subject: "Facility Maintenance Request - [Location]",
+    category: "Facility",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Please address the following maintenance request:
+
+LOCATION DETAILS:
+• Building: [Building Name]
+• Floor: [Floor Number]
+• Room/Area: [Specific Location]
+• Access Requirements: [Special Access Needed]
+
+MAINTENANCE TYPE:
+• Category: [HVAC/Electrical/Plumbing/etc.]
+• Priority: [Urgent/Normal/Scheduled]
+• Impact: [Number of People Affected]
+
+ISSUE DESCRIPTION:
+• Problem: [Detailed Description]
+• Duration: [How Long Issue Exists]
+• Safety Concern: [Yes/No]
+
+PREFERRED TIMING:
+• Requested Date: [Date]
+• Business Hours Impact: [Yes/No]
+• Coordination Needed: [Departments]
+
+Contact Person:
+[Name]
+[Department]
+[Phone/Extension]
+
+Regards,
+[Requestor]`
+  },
+
+  // 📱 Mobile Device Management
+  {
+    id: "mdm-001",
+    subject: "Mobile Device Registration - [Device Type]",
+    category: "MDM",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Please register the following mobile device:
+
+DEVICE INFORMATION:
+• Type: [Smartphone/Tablet]
+• Make: [Manufacturer]
+• Model: [Model Name]
+• IMEI: [Number]
+• Phone Number: [If Applicable]
+
+USER DETAILS:
+• Name: [Employee Name]
+• Department: [Department]
+• Position: [Job Title]
+• Employee ID: [Number]
+
+ACCESS REQUIREMENTS:
+• Email Configuration: [Yes/No]
+• VPN Access: [Yes/No]
+• Corporate Apps: [List Required Apps]
+
+SECURITY SETTINGS:
+• Password Policy: [Standard/Enhanced]
+• Data Encryption: [Required/Optional]
+• Remote Wipe: [Enabled/Disabled]
+
+Regards,
+[Requestor]`
+  },
+
+  // 🌐 Cloud Services Management
+  {
+    id: "cloud-access-001",
+    subject: "Cloud Service Access Request",
+    category: "Cloud",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Requesting access to cloud services:
+
+SERVICE DETAILS:
+• Platform: [AWS/Azure/GCP/etc.]
+• Service Type: [Compute/Storage/Database]
+• Environment: [Dev/Test/Prod]
+
+USER INFORMATION:
+• Name: [Employee Name]
+• Role: [Job Function]
+• Project: [Project Name]
+• Duration: [Access Period]
+
+ACCESS LEVEL:
+• Permission Type: [Read/Write/Admin]
+• Resource Groups: [List]
+• Special Privileges: [If Any]
+
+BUSINESS JUSTIFICATION:
+[Explain Need]
+
+Cost Center: [Code]
+Manager Approval: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  // 🔬 Research & Development
+  {
+    id: "rd-project-001",
+    subject: "R&D Project Proposal",
+    category: "R&D",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Project proposal details below:
+
+PROJECT OVERVIEW:
+• Name: [Project Name]
+• Category: [Technology Area]
+• Duration: [Timeframe]
+• Team Size: [Number]
+
+OBJECTIVES:
+1. [Primary Goal]
+2. [Secondary Goals]
+3. [Expected Outcomes]
+
+RESOURCE REQUIREMENTS:
+• Budget: [Estimated Cost]
+• Equipment: [Required Tools]
+• Software: [Required Licenses]
+• Personnel: [Skills Needed]
+
+TIMELINE:
+• Start Date: [Date]
+• Key Milestones: [List]
+• Completion: [Target Date]
+
+ROI PROJECTION:
+• Expected Benefits: [List]
+• Market Impact: [Analysis]
+• Risk Assessment: [Factors]
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  // 🎮 Digital Media & Content
+  {
+    id: "content-req-001",
+    subject: "Digital Content Request",
+    category: "Media",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Content creation request details:
+
+PROJECT DETAILS:
+• Content Type: [Video/Graphics/Animation]
+• Purpose: [Marketing/Training/Internal]
+• Target Audience: [Specify]
+• Platform: [Where Content Will Be Used]
+
+SPECIFICATIONS:
+• Format: [File Type]
+• Dimensions: [Size]
+• Duration: [If Video/Animation]
+• Brand Guidelines: [Reference]
+
+KEY MESSAGES:
+• Primary Message: [Main Point]
+• Secondary Points: [List]
+• Call to Action: [Specify]
+
+TIMELINE:
+• Draft Needed: [Date]
+• Final Delivery: [Date]
+• Review Cycles: [Number]
+
+Regards,
+[Requestor]`
+  },
+
+  // 🤖 Automation & Workflows
+  {
+    id: "auto-req-001",
+    subject: "Process Automation Request",
+    category: "Automation",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Request for process automation:
+
+PROCESS DETAILS:
+• Current Process: [Description]
+• Frequency: [Daily/Weekly/Monthly]
+• Volume: [Transactions/Period]
+• Current Time Spent: [Hours]
+
+REQUIREMENTS:
+• Inputs: [Data Sources]
+• Processing: [Logic/Rules]
+• Outputs: [Expected Results]
+• Integration: [Systems Involved]
+
+BUSINESS IMPACT:
+• Time Saving: [Estimated Hours]
+• Cost Saving: [Amount]
+• Quality Improvement: [Metrics]
+• Risk Reduction: [Factors]
+
+STAKEHOLDERS:
+• Process Owner: [Name]
+• End Users: [Groups]
+• Systems Team: [Contact]
+
+Regards,
+[Requestor]`
+  },
+
+  // 📊 Data Analytics
+  {
+    id: "data-req-001",
+    subject: "Data Analysis Request",
+    category: "Analytics",
+    body: `Dear Analytics Team,
+
+Requesting data analysis support:
+
+ANALYSIS REQUIREMENTS:
+• Data Source: [Systems/Files]
+• Time Period: [Date Range]
+• Metrics: [KPIs]
+• Segmentation: [Categories]
+
+OBJECTIVES:
+• Primary Question: [Main Analysis Goal]
+• Secondary Areas: [Additional Insights]
+• Decision Support: [How Will This Be Used]
+
+OUTPUT FORMAT:
+• Report Type: [Dashboard/Report/Raw Data]
+• Visualization: [Charts/Graphs Needed]
+• Delivery Method: [Platform/Format]
+• Update Frequency: [One-time/Recurring]
+
+TIMELINE:
+• Required By: [Date]
+• Milestone Reviews: [Checkpoints]
+
+Regards,
+[Requestor]`
+  },
+
+  // 🔐 Identity & Access Management
+  {
+    id: "iam-req-001",
+    subject: "Access Rights Modification",
+    category: "IAM",
+    body: `Dear IAM Team,
+
+Request for access rights modification:
+
+USER DETAILS:
+• Name: [Employee Name]
+• ID: [Employee Number]
+• Department: [Department]
+• Role: [Job Title]
+
+ACCESS CHANGES:
+• Systems: [List Applications]
+• Permission Level: [Read/Write/Admin]
+• Duration: [Temporary/Permanent]
+• Effective Date: [Start Date]
+
+JUSTIFICATION:
+• Business Need: [Explanation]
+• Project: [If Applicable]
+• Manager Approval: [Name]
+
+SECURITY REQUIREMENTS:
+• Data Classification: [Level]
+• Compliance: [Standards]
+• Training Required: [Yes/No]
+
+Regards,
+[Requestor]`
+  },
+
+  // 🎓 Learning & Development
+  {
+    id: "learning-req-001",
+    subject: "Training Program Request",
+    category: "Learning",
+    body: `Dear L&D Team,
+
+Request for training program:
+
+TRAINING NEEDS:
+• Topic: [Subject Area]
+• Level: [Basic/Intermediate/Advanced]
+• Target Audience: [Roles/Departments]
+• Number of Participants: [Count]
+
+PROGRAM DETAILS:
+• Format: [Online/Classroom/Hybrid]
+• Duration: [Length]
+• Preferred Dates: [Timeline]
+• Location: [If Physical]
+
+LEARNING OBJECTIVES:
+• Primary Skills: [List]
+• Secondary Skills: [List]
+• Certification: [If Required]
+
+BUDGET:
+• Cost Per Person: [Amount]
+• Total Budget: [Amount]
+• Cost Center: [Code]
+
+Regards,
+[Requestor]`
+  },
+
+  // �🎫 Support & Ticketing
   {
     id: "sup-001",
-    subject: "Ticket Acknowledgement",
+    subject: "IT Support Ticket Acknowledgment - #[ID]",
     category: "Support",
-    body: `Sir / Madam,
+    body: `Dear [Name],
 
-Good day!
+Ticket #[ID] has been created for your support request.
 
-We have received your support request and assigned it ticket #[ID].  
-Our team is currently reviewing your case and will provide updates shortly.  
+TICKET DETAILS:
+Priority: [Priority Level]
+Category: [Issue Category]
+Assigned To: [Team/Agent]
+Response Time: [Expected Time]
 
-Best regards.`
+NEXT STEPS:
+1. Case review within [Response Time]
+2. Status updates via email
+3. Track at [Portal URL]
+
+Urgent matters: [Emergency Contact]
+
+[Signature]
+[Title]
+[Department]`
   },
   {
     id: "sup-002",
-    subject: "Ticket Resolution",
+    subject: "IT Support Ticket Resolution - #[ID]",
     category: "Support",
-    body: `Sir / Madam,
+    body: `Dear [Name],
 
-Good day!
+Your support ticket #[ID] has been successfully resolved.
 
-This is to inform you that your support ticket #[ID] has been resolved.  
-Please review the solution and confirm if it addresses your concern.  
+RESOLUTION DETAILS:
+Issue: [Brief Description]
+Resolution: [Solution Implemented]
+Resolved By: [Agent Name]
+Resolved Date: [Date]
 
-Best regards.`
+ACTION REQUIRED:
+Please verify that the solution meets your requirements. If you encounter any further issues:
+1. Respond to this email within 48 hours
+2. Create a new ticket referencing #[ID]
+3. Contact your assigned support agent directly
+
+FEEDBACK:
+Your feedback helps us improve. Please take a moment to rate our service:
+[Feedback Link]
+
+Thank you for your cooperation.
+
+${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}
+[Company Name]`
   },
   {
     id: "sup-003",
-    subject: "System Outage Notification",
+    subject: "ALERT: System Outage Notification - [Service Name]",
     category: "Support",
-    body: `Dear Team,
+    body: `Dear [Department/Team],
 
-We are currently experiencing a temporary system outage affecting [Service].  
-Our engineers are actively working to restore functionality as quickly as possible.  
-Further updates will be provided.  
+INCIDENT ALERT: We are currently experiencing a system outage.
 
-Thank you for your patience.`
+INCIDENT DETAILS:
+Service Affected: [Service Name]
+Start Time: [Timestamp]
+Estimated Recovery: [ETA]
+Impact Level: [Severity]
+Affected Areas: [List of Affected Systems/Regions]
+
+CURRENT STATUS:
+• Issue: [Brief Description of the Problem]
+• Impact: [Business Impact Description]
+• Resolution: Our engineering team is actively working on restoration
+
+WORKAROUND:
+[If Available, Provide Alternative Methods/Systems]
+
+NEXT UPDATE:
+The next status update will be provided by [Time] or sooner if there are significant developments.
+
+For critical issues during this outage, please contact:
+Emergency Support: [Emergency Contact]
+Incident Manager: [Name/Contact]
+
+We appreciate your patience and understanding.
+
+Regards,
+[IT Operations Team]
+[Company Name]`
   },
 
-  // 🔹 IT Hardware Assessments
+  // � Hardware Management
+  {
+    id: "hw-replacement-001",
+    subject: "Hardware Replacement Request - [Device Type] - [Location]",
+    category: "Hardware Management",
+    body: `Dear [IT Manager/Procurement Team],
+
+This is a formal request for hardware replacement based on our recent assessment.
+
+DEVICE DETAILS:
+Type: [Device Type]
+Manufacturer: [Brand]
+Model: [Model Number]
+Serial Number: [S/N]
+Asset Tag: [Company Asset ID]
+Purchase Date: [Date]
+Warranty Status: [In/Out of Warranty]
+Location: [Building/Floor/Department]
+User: [Employee Name/ID]
+
+CURRENT SPECIFICATIONS:
+• Processor: [CPU Details]
+• Memory: [RAM Details]
+• Storage: [Storage Details]
+• Other Components: [Relevant Specs]
+
+ISSUE ASSESSMENT:
+• Primary Issue: [Brief Description]
+• Diagnostic Results: [Test Findings]
+• Performance Metrics: [Relevant Data]
+• Impact Level: [High/Medium/Low]
+
+REPLACEMENT JUSTIFICATION:
+1. [Technical Reason]
+2. [Business Impact]
+3. [Cost Implications]
+
+REQUESTED SPECIFICATIONS:
+• Recommended Model: [New Device Model]
+• Estimated Cost: [Amount]
+• Priority Level: [Urgent/Normal/Low]
+• Required Features: [List Key Requirements]
+
+PROCUREMENT DETAILS:
+Cost Center: [Code]
+Budget Category: [Category]
+Preferred Vendor: [If Any]
+Quotation Reference: [If Available]
+
+TIMELINE:
+• Request Date: [Current Date]
+• Required By: [Target Date]
+• Business Justification: [Explain Urgency if Applicable]
+
+ADDITIONAL NOTES:
+• Data Migration Required: [Yes/No]
+• Special Requirements: [Any Specific Needs]
+• User Downtime Plan: [Mitigation Strategy]
+
+APPROVALS REQUIRED:
+1. Department Head: [Name]
+2. IT Manager: [Name]
+3. Finance (if above [threshold]): [Name]
+
+Please review and provide your approval for this replacement request.
+
+Best regards,
+[Your Name]
+[Position]
+[Department]
+[Contact Information]
+
+Attachments:
+1. Assessment Report
+2. Cost Analysis
+3. Vendor Quotations
+4. Performance Logs`
+  },
+
+  // �🔹 IT Hardware Assessments
   {
     id: "hw-001",
-    subject: "Battery Assessment Report",
+    subject: "Battery Health Assessment Report - [Device ID]",
     category: "IT",
-    body: `Sir / Madam,
+    body: `Dear [Stakeholder Name],
 
-Good day!
+This report details the battery health assessment conducted on [Date].
 
-Please see below for the External Battery status of [Employee Name].
+DEVICE INFORMATION:
+User: [Employee Name]
+Department: [Department]
+Device ID: [PC1234]
+Model: [Device Model]
 
-PC Name: [PC1234]  
-Model: [Insert Model]  
+BATTERY SPECIFICATIONS:
+Type: [Internal/External]
+Serial Number: [SN1234]
+Product Number: [PN1234]
+FRU Part#: [FRU1234]
+Original Capacity: [X] mAh
 
-External Battery:  
-Serial Number: [1234]  
-Product Number: [1234]  
-FRU Part#: [1234]  
+DIAGNOSTIC RESULTS:
+• Current Capacity: [X] mAh
+• Health Percentage: [X]%
+• Charge Cycles: [X]
+• Wear Level: [Normal/High]
 
-Findings:  
-The built-in battery charge hold level is 31.30%, which is near 30% required capacity.  
+ANALYSIS:
+The battery is operating at [X]% of its original capacity, [above/below] the recommended 70% threshold.
 
-Recommendation: For replacement, please coordinate with procurement.  
+RECOMMENDATIONS:
+1. [Immediate/Scheduled] replacement required
+2. Estimated replacement cost: [Amount]
+3. Procurement reference: [REQ-XXX]
 
-Best regards.`
+NEXT STEPS:
+1. [Action Item 1]
+2. [Action Item 2]
+3. Schedule: [Timeline]
+
+For procurement processing, please reference this report number: [Report-ID]
+
+${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}
+[Company Name]`
   },
   {
     id: "hw-002",
@@ -76,14 +1124,14 @@ Best regards.`
 
 Good day!
 
-This is to provide an assessment regarding the printer at [Department Name].  
+Please find below an assessment regarding the printer at [Department Name].  
 
 Findings:  
 - Initially diagnosed with faulty power supply.  
 - Replaced but failed again within three weeks.  
 - Signs of end-of-life hardware condition.  
 
-Resolution Performed:  
+RESOLUTION:
 - Replaced power supply.  
 - Unit failed again and is no longer serviceable.  
 
@@ -95,6 +1143,222 @@ Best regards.`
   },
   {
     id: "hw-003",
+    subject: "PC Hardware Failure Report",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+This is to report a hardware failure on the following PC:
+[PC Details]
+
+Best regards.`
+  },
+  
+  {
+    id: "hw-004",
+    subject: "Drive Assessment Report",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+Please see below the assessment for Drive123:
+
+MODEL: [Insert Drive Model]
+SERIAL: [Insert Serial Number]
+SIZE: [Insert Drive Capacity]
+
+IT RESOLUTION:
+- Conducted comprehensive drive diagnostic tests
+- Verified drive health status and SMART attributes
+- Performed data integrity checks
+- Tested read/write speeds and access times
+- Evaluated physical condition of the drive
+
+RECOMMENDATIONS:
+- Based on the diagnostic results, [state if drive needs replacement or can continue use]
+- [Add any specific maintenance tasks required]
+- [Include backup recommendations if applicable]
+- [Specify any performance optimization suggestions]
+- [Note any warranty/support status]
+
+Please let us know if you need any clarification or have additional questions.
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-005",
+    subject: "Network Equipment Assessment",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+Please find below the assessment for the network equipment:
+
+DEVICE TYPE: [Switch/Router/Access Point]
+MODEL: [Device Model]
+SERIAL: [Serial Number]
+LOCATION: [Building/Floor/Department]
+
+IT RESOLUTION:
+- Performed network connectivity tests
+- Checked port status and throughput
+- Verified firmware version and updates
+- Analyzed error logs and performance metrics
+- Tested failover capabilities
+
+RECOMMENDATIONS:
+- [Specify if upgrade/replacement needed]
+- [List configuration changes required]
+- [Note any security concerns]
+- [Suggest performance optimizations]
+- [Include maintenance schedule]
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-006",
+    subject: "Server Assessment Report",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+Below is the assessment report for the server:
+
+SERVER INFO:
+Model: [Server Model]
+Serial: [Serial Number]
+Role: [Application/Database/Web/etc.]
+Location: [Data Center/Rack]
+
+IT RESOLUTION:
+- Conducted full system diagnostics
+- Checked storage array status
+- Verified backup systems
+- Analyzed performance metrics
+- Reviewed security protocols
+
+RECOMMENDATIONS:
+- [Hardware upgrade requirements]
+- [Software/OS updates needed]
+- [Capacity planning suggestions]
+- [Backup strategy improvements]
+- [Security enhancement recommendations]
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-007",
+    subject: "UPS System Assessment",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+Please see below the UPS system assessment results:
+
+UNIT DETAILS:
+Model: [UPS Model]
+Serial: [Serial Number]
+Capacity: [kVA Rating]
+Location: [Installation Site]
+
+IT RESOLUTION:
+- Tested battery condition
+- Checked charging system
+- Verified load distribution
+- Conducted runtime test
+- Inspected physical connections
+
+RECOMMENDATIONS:
+- [Battery replacement timeline]
+- [Load balancing suggestions]
+- [Maintenance schedule updates]
+- [Capacity upgrade needs]
+- [Environmental improvements]
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-008",
+    subject: "Laptop Fleet Assessment",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+This is a fleet assessment report for department laptops:
+
+ASSESSMENT SCOPE:
+Department: [Department Name]
+Number of Units: [Count]
+Models Covered: [List of Models]
+
+IT RESOLUTION:
+- Performed hardware diagnostics
+- Checked battery health
+- Verified OS/Software versions
+- Assessed security compliance
+- Reviewed warranty status
+
+RECOMMENDATIONS:
+- [Units requiring replacement]
+- [Upgrade recommendations]
+- [Standardization suggestions]
+- [Security improvements]
+- [Procurement timeline]
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-009",
+    subject: "Data Center Cooling Assessment",
+    category: "IT",
+    body: `Sir / Madam,
+
+Good day!
+
+Below is the assessment of the data center cooling system:
+
+SYSTEM DETAILS:
+Type: [CRAC/CRAH/In-Row]
+Model: [Cooling Unit Model]
+Coverage: [Room/Row/Rack]
+Current Load: [Percentage/BTU]
+
+IT RESOLUTION:
+- Monitored temperature distribution
+- Checked airflow patterns
+- Verified humidity levels
+- Assessed power efficiency
+- Reviewed redundancy systems
+
+RECOMMENDATIONS:
+- [Cooling optimization steps]
+- [Maintenance requirements]
+- [Energy efficiency improvements]
+- [Capacity planning suggestions]
+- [Emergency procedure updates]
+
+Best regards,
+[IT Support Name]`
+  },
+
+  {
+    id: "hw-010",
     subject: "PC Hardware Failure Report",
     category: "IT",
     body: `Sir / Madam,
@@ -159,23 +1423,71 @@ Best regards.`
   // 🔹 Servers & Network
   {
     id: "srv-001",
-    subject: "Server Assessment Report",
+    subject: "Server Performance Assessment Report - [Server ID]",
     category: "IT",
-    body: `Sir / Madam,
+    body: `Dear [IT Manager/Stakeholder],
 
-Good day!
+This report summarizes the comprehensive assessment of server [Server Name] conducted on [Date].
 
-We conducted an assessment of [Server Name].  
+SERVER SPECIFICATIONS:
+Hostname: [Server Name]
+Role: [Primary/Backup/Development]
+Location: [Data Center/Rack ID]
+OS: [Operating System/Version]
 
-Findings:  
-- CPU usage reached critical levels during peak.  
-- Disks show early warning signs of degradation.  
+PERFORMANCE METRICS:
+1. CPU Utilization:
+   • Average: [X]%
+   • Peak: [X]%
+   • Critical Threshold: [X]%
 
-Recommendation:  
-- Replace affected drives.  
-- Consider capacity expansion.  
+2. Memory Usage:
+   • Total: [X] GB
+   • Average Used: [X]%
+   • Peak Used: [X]%
 
-Best regards.`
+3. Storage Analysis:
+   • Total Capacity: [X] TB
+   • Used Space: [X]%
+   • Growth Rate: [X]% per month
+
+4. Network Performance:
+   • Average Bandwidth: [X] Mbps
+   • Peak Traffic: [X] Mbps
+
+CRITICAL FINDINGS:
+1. [Performance Issue 1]
+2. [Performance Issue 2]
+3. [Risk Assessment]
+
+RECOMMENDATIONS:
+1. Immediate Actions:
+   • [Action Item 1]
+   • [Action Item 2]
+
+2. Short-term Improvements:
+   • [Improvement 1]
+   • [Improvement 2]
+
+3. Long-term Planning:
+   • [Strategic Plan 1]
+   • [Strategic Plan 2]
+
+BUDGET IMPLICATIONS:
+• Estimated Costs: [Amount]
+• Priority Level: [High/Medium/Low]
+• ROI Analysis: [Details]
+
+NEXT STEPS:
+1. Review recommendations by [Date]
+2. Approve action items
+3. Schedule implementation
+
+Please review and provide your approval for the recommended actions.
+
+${EMAIL_CONSTANTS.POSITION_SIGNATURE}
+[IT Infrastructure Team]
+[Company Name]`
   },
   {
     id: "net-001",
