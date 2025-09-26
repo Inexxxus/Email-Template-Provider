@@ -128,6 +128,41 @@ Category Structure:
     - Cultural Adaptation
     - Regional Compliance
     - Market Entry
+
+21. 🏠 Remote Work Management
+    - Work Requests
+    - Equipment Setup
+    - Virtual Meetings
+    - Technical Support
+    - Workspace Compliance
+
+22. 🤝 Customer Success
+    - Customer Onboarding
+    - Feedback Collection
+    - Success Stories
+    - Account Reviews
+    - Service Updates
+
+23. 📣 Marketing Campaigns
+    - Campaign Approvals
+    - Performance Reports
+    - Content Planning
+    - A/B Testing
+    - Analytics Reviews
+
+24. 📋 Vendor Management
+    - Vendor Evaluation
+    - Contract Management
+    - Performance Reviews
+    - Service Level Agreements
+    - Issue Resolution
+
+25. 🔒 Data Privacy & Compliance
+    - Access Requests
+    - Privacy Assessments
+    - Compliance Reports
+    - Data Breaches
+    - Policy Updates
 */
 
 const customTemplates = [
@@ -431,7 +466,7 @@ Attachments:
 4. Vendor Quotations
 
 Best regards,
-[Your Name]
+[Name]
 [Position]
 [Department]
 [Contact Information]`
@@ -625,6 +660,658 @@ Contact Person:
 
 Regards,
 [Requestor]`
+  },
+
+  // 🏠 Remote Work Management
+  {
+    id: "remote-request-001",
+    subject: "Remote Work Request - [Start Date]",
+    category: "Remote Work",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}I would like to request remote work arrangements:
+
+REQUEST DETAILS:
+• Duration: [Temporary/Permanent]
+• Start Date: [Date]
+• End Date: [If Temporary]
+• Work Hours: [Time Zone & Hours]
+
+EQUIPMENT NEEDS:
+• Hardware: [List Required]
+• Software: [List Required]
+• Network: [VPN/Special Access]
+
+WORK PLAN:
+• Daily Tasks: [Key Responsibilities]
+• Communication: [Tools & Schedule]
+• Team Meetings: [Regular Times]
+
+JUSTIFICATION:
+[Brief Explanation]
+
+Manager: [Name]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "remote-setup-001",
+    subject: "Remote Workspace Setup Verification",
+    category: "Remote Work",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Please confirm your remote workspace setup:
+
+WORKSPACE CHECKLIST:
+• Dedicated Work Area: [Yes/No]
+• Ergonomic Setup: [Yes/No]
+• Adequate Lighting: [Yes/No]
+• Internet Speed: [Mbps]
+
+EQUIPMENT STATUS:
+• Computer: [Model/Specs]
+• Monitor: [Size/Resolution]
+• Peripherals: [List]
+• Software: [Installed/Needed]
+
+NETWORK SETUP:
+• Internet Provider: [Name]
+• Backup Connection: [Available/None]
+• VPN Tested: [Yes/No]
+• Video Call Quality: [Good/Issues]
+
+SECURITY MEASURES:
+• Secure WiFi: [Yes/No]
+• Password Policy: [Confirmed]
+• Data Protection: [Measures]
+
+Any issues or needs:${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "virtual-meeting-001",
+    subject: "Virtual Team Meeting - [Topic]",
+    category: "Remote Work",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Details for our upcoming virtual team meeting:
+
+MEETING INFO:
+• Date: [Date]
+• Time: [Time with TimeZone]
+• Duration: [Length]
+• Platform: [Tool Name]
+
+ACCESS DETAILS:
+• Link: [Meeting URL]
+• Meeting ID: [ID]
+• Password: [If Required]
+• Dial-in: [Numbers]
+
+AGENDA:
+1. [Topic 1] - [Duration]
+2. [Topic 2] - [Duration]
+3. [Topic 3] - [Duration]
+
+PREPARATION:
+• Review: [Documents]
+• Prepare: [Requirements]
+• Test: [Tech Check]
+
+Notes:
+- Please join 5 minutes early
+- Keep microphone muted when not speaking
+- Use headphones if possible${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "customer-onboarding-001",
+    subject: "Welcome to [Company Name] - Getting Started",
+    category: "Customer Success",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Welcome to [Company Name]! We're excited to have you on board.
+
+NEXT STEPS:
+1. Account Setup
+   • Username: [Details]
+   • Initial Password: [If Applicable]
+   • Access Portal: [URL]
+
+2. Implementation Timeline
+   • Kickoff Call: [Date/Time]
+   • Training Sessions: [Dates]
+   • Go-Live Date: [Target]
+
+3. Resources
+   • Quick Start Guide: [Link]
+   • Knowledge Base: [Link]
+   • Support Portal: [Link]
+
+YOUR TEAM:
+• Account Manager: [Name]
+• Technical Support: [Contact]
+• Implementation Lead: [Name]
+
+Please don't hesitate to reach out with any questions!${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "customer-feedback-001",
+    subject: "Your Feedback Matters - [Product/Service] Review",
+    category: "Customer Success",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}We value your experience with [Product/Service] and would appreciate your feedback:
+
+QUICK REVIEW:
+• Overall Satisfaction: [1-5 Stars]
+• Ease of Use: [1-5 Stars]
+• Value for Money: [1-5 Stars]
+
+SPECIFIC FEEDBACK:
+1. What do you like most?
+   [Response]
+
+2. What could be improved?
+   [Response]
+
+3. Additional Features Desired:
+   [Suggestions]
+
+USAGE EXPERIENCE:
+• Primary Use Case: [Description]
+• Time Using Product: [Duration]
+• Key Benefits: [List]
+
+Your feedback helps us improve our service!
+
+Take our detailed survey: [Survey Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "success-story-001",
+    subject: "Share Your Success Story with [Company Name]",
+    category: "Customer Success",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}We'd love to feature your success with [Product/Service]:
+
+SUCCESS HIGHLIGHTS:
+• Challenge Solved: [Description]
+• Solution Used: [Features]
+• Results Achieved: [Metrics]
+
+STORY DETAILS:
+1. Background
+   [Company Context]
+
+2. Implementation
+   [Process Overview]
+
+3. Outcomes
+   • Quantitative: [Numbers]
+   • Qualitative: [Benefits]
+
+PERMISSIONS:
+• Case Study Use: [Yes/No]
+• Quote Attribution: [Yes/No]
+• Logo Usage: [Yes/No]
+
+We'll send you a draft for review before publishing.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "campaign-approval-001",
+    subject: "Marketing Campaign Approval Request - [Campaign Name]",
+    category: "Marketing",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Please review and approve the following marketing campaign:
+
+CAMPAIGN OVERVIEW:
+• Name: [Campaign Name]
+• Type: [Email/Social/PPC/etc.]
+• Duration: [Timeline]
+• Budget: [Amount]
+
+TARGET AUDIENCE:
+• Demographics: [Details]
+• Segments: [List]
+• Expected Reach: [Number]
+
+CREATIVE ASSETS:
+• Landing Pages: [URLs]
+• Email Templates: [Links]
+• Ad Creatives: [Links]
+• Social Posts: [Links]
+
+SUCCESS METRICS:
+• Primary KPI: [Metric]
+• Secondary KPIs: [List]
+• Benchmark Goals: [Targets]
+
+Timeline for approval needed: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "campaign-performance-001",
+    subject: "Marketing Campaign Performance Report - [Campaign Name]",
+    category: "Marketing",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Here's the performance report for [Campaign Name]:
+
+CAMPAIGN METRICS:
+• Impressions: [Number]
+• Engagement: [Rate]
+• Conversions: [Number]
+• ROI: [Percentage]
+
+CHANNEL PERFORMANCE:
+1. Email Marketing
+   • Open Rate: [%]
+   • Click Rate: [%]
+   • Conversion: [%]
+
+2. Social Media
+   • Reach: [Number]
+   • Engagement: [Rate]
+   • Clicks: [Number]
+
+3. Paid Advertising
+   • Spend: [Amount]
+   • CPC: [Cost]
+   • CTR: [Rate]
+
+KEY INSIGHTS:
+• Top Performing: [Elements]
+• Areas for Improvement: [List]
+• Recommendations: [Actions]
+
+Full report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "content-plan-001",
+    subject: "Content Calendar Review - [Month/Quarter]",
+    category: "Marketing",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Please review our content plan for [Period]:
+
+CONTENT SCHEDULE:
+Week 1:
+• Blog: [Topic] - [Due Date]
+• Social: [Topics] - [Platforms]
+• Email: [Campaign] - [Send Date]
+
+Week 2:
+• Blog: [Topic] - [Due Date]
+• Social: [Topics] - [Platforms]
+• Email: [Campaign] - [Send Date]
+
+RESOURCE NEEDS:
+• Writers: [Names]
+• Designers: [Names]
+• Reviewers: [Names]
+
+THEMES & MESSAGING:
+• Key Topics: [List]
+• Target Keywords: [List]
+• Call-to-Actions: [List]
+
+Please provide feedback by: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "vendor-eval-001",
+    subject: "Vendor Evaluation Report - [Vendor Name]",
+    category: "Vendor Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Here's the evaluation report for [Vendor Name]:
+
+VENDOR DETAILS:
+• Company: [Name]
+• Service: [Type]
+• Contract Value: [Amount]
+• Relationship Duration: [Time]
+
+PERFORMANCE METRICS:
+1. Service Quality
+   • Reliability: [Score/5]
+   • Response Time: [Score/5]
+   • Issue Resolution: [Score/5]
+
+2. Business Terms
+   • Cost Efficiency: [Score/5]
+   • Payment Terms: [Score/5]
+   • Contract Flexibility: [Score/5]
+
+3. Communication
+   • Responsiveness: [Score/5]
+   • Reporting: [Score/5]
+   • Account Management: [Score/5]
+
+COMPLIANCE & RISK:
+• Security Standards: [Met/Not Met]
+• Insurance Coverage: [Status]
+• Regulatory Compliance: [Status]
+
+RECOMMENDATION:
+• Continue/Modify/Terminate
+• Action Items: [List]
+• Timeline: [Dates]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "contract-renewal-001",
+    subject: "Contract Renewal Review - [Vendor Name]",
+    category: "Vendor Management",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Regarding the upcoming contract renewal with [Vendor Name]:
+
+CONTRACT DETAILS:
+• Current End Date: [Date]
+• Renewal Deadline: [Date]
+• Current Terms: [Summary]
+
+PROPOSED CHANGES:
+1. Service Level
+   • Current: [Details]
+   • Proposed: [Details]
+
+2. Pricing
+   • Current: [Amount]
+   • Proposed: [Amount]
+
+3. Terms
+   • Duration: [Length]
+   • Payment Terms: [Details]
+   • Special Conditions: [List]
+
+BUSINESS IMPACT:
+• Cost Analysis: [Details]
+• Service Impact: [Assessment]
+• Risk Factors: [List]
+
+Please review and approve by: [Date]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "vendor-issue-001",
+    subject: "Vendor Service Issue Report - [Issue Type]",
+    category: "Vendor Management",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}We need to address the following service issue:
+
+ISSUE DETAILS:
+• Type: [Category]
+• Severity: [Level]
+• Start Date: [Date]
+• Status: [Current State]
+
+IMPACT ASSESSMENT:
+• Business Impact: [Description]
+• Affected Users: [Number]
+• Workarounds: [If Any]
+
+SLA REQUIREMENTS:
+• Response Time: [Target]
+• Resolution Time: [Target]
+• Current Status: [Progress]
+
+REQUESTED ACTION:
+1. [Immediate Action]
+2. [Follow-up Steps]
+3. [Prevention Plan]
+
+Please acknowledge and provide ETA for resolution.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "data-access-001",
+    subject: "Data Access Request - [Request Type]",
+    category: "Data Privacy",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Please process the following data access request:
+
+REQUEST DETAILS:
+• Type: [Access/Deletion/Correction]
+• Requestor: [Name]
+• ID Verification: [Status]
+• Deadline: [Date]
+
+DATA SCOPE:
+• Systems: [List]
+• Data Types: [Categories]
+• Date Range: [Period]
+
+VERIFICATION STEPS:
+1. Identity Confirmed: [Yes/No]
+2. Request Validity: [Verified]
+3. Legal Basis: [Justification]
+
+ACTION REQUIRED:
+• Data Extraction: [Team]
+• Review Process: [Steps]
+• Delivery Method: [Format]
+
+Please acknowledge receipt and confirm timeline.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "privacy-assessment-001",
+    subject: "Privacy Impact Assessment - [Project Name]",
+    category: "Data Privacy",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Results of the Privacy Impact Assessment for [Project]:
+
+PROJECT OVERVIEW:
+• Name: [Project Title]
+• Scope: [Description]
+• Data Types: [Categories]
+• Processing Purpose: [Explanation]
+
+RISK ASSESSMENT:
+1. Data Collection
+   • Necessity: [Justified/Not]
+   • Minimization: [Measures]
+   • Consent: [Method]
+
+2. Data Processing
+   • Security: [Controls]
+   • Access: [Restrictions]
+   • Retention: [Period]
+
+3. Data Sharing
+   • Recipients: [List]
+   • Safeguards: [Measures]
+   • Agreements: [Status]
+
+RECOMMENDATIONS:
+1. [Key Finding 1]
+2. [Key Finding 2]
+3. [Key Finding 3]
+
+Required Actions: [List]${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "compliance-report-001",
+    subject: "Data Privacy Compliance Report - [Period]",
+    category: "Data Privacy",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Compliance status report for [Period]:
+
+COMPLIANCE OVERVIEW:
+• Framework: [Standards]
+• Audit Period: [Dates]
+• Overall Status: [Rating]
+
+KEY METRICS:
+• Privacy Incidents: [Number]
+• Access Requests: [Count]
+• Response Time: [Average]
+
+ASSESSMENT AREAS:
+1. Policy Compliance
+   • Documentation: [Status]
+   • Training: [Completion %]
+   • Reviews: [Frequency]
+
+2. Technical Controls
+   • Encryption: [Status]
+   • Access Control: [Effectiveness]
+   • Monitoring: [Coverage]
+
+3. Third-Party Risk
+   • Vendor Reviews: [Status]
+   • Contract Updates: [Needed]
+   • Due Diligence: [Completed]
+
+ACTIONS REQUIRED:
+1. [Priority Action 1]
+2. [Priority Action 2]
+3. [Priority Action 3]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "breach-notification-001",
+    subject: "Data Breach Incident Report - [Severity Level]",
+    category: "Data Privacy",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Notification of a data breach incident:
+
+INCIDENT DETAILS:
+• Detection Date: [Date/Time]
+• Breach Type: [Category]
+• Affected Data: [Types]
+• Impact Scope: [Number/Scale]
+
+IMMEDIATE ACTIONS:
+1. Containment
+   • Status: [Contained/Ongoing]
+   • Methods: [Actions Taken]
+   • Timeline: [Updates]
+
+2. Investigation
+   • Root Cause: [Findings]
+   • Vulnerabilities: [Identified]
+   • Evidence: [Collected]
+
+IMPACT ASSESSMENT:
+• Data Sensitivity: [Level]
+• Affected Parties: [Groups]
+• Risk Level: [Rating]
+
+NOTIFICATION REQUIREMENTS:
+• Regulators: [Due Date]
+• Individuals: [Timeline]
+• Third Parties: [List]
+
+Response Plan:
+1. [Immediate Step]
+2. [Short-term Action]
+3. [Long-term Prevention]
+
+URGENT: Respond with acknowledgment${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "vendor-review-001",
+    subject: "Quarterly Vendor Performance Review",
+    category: "Vendor Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Performance review for Q[X] [Year]:
+
+SERVICE METRICS:
+• Uptime: [Percentage]
+• Response Times: [Average]
+• Issue Resolution: [Rate]
+
+FINANCIAL PERFORMANCE:
+• Budget Adherence: [Status]
+• Cost Savings: [Amount]
+• Invoice Accuracy: [Rate]
+
+RELATIONSHIP STATUS:
+• Communication: [Rating]
+• Innovation: [Examples]
+• Partnership Value: [Assessment]
+
+ACTION ITEMS:
+1. [Improvement Area 1]
+2. [Improvement Area 2]
+3. [Improvement Area 3]
+
+Next Review Date: [Date]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "ab-test-001",
+    subject: "A/B Test Results - [Test Name]",
+    category: "Marketing",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Results from our recent A/B test:
+
+TEST OVERVIEW:
+• Element Tested: [Component]
+• Variants: A vs B
+• Duration: [Time Period]
+• Sample Size: [Number]
+
+RESULTS:
+Variant A:
+• Conversion Rate: [%]
+• Engagement: [Metrics]
+• Key Metrics: [List]
+
+Variant B:
+• Conversion Rate: [%]
+• Engagement: [Metrics]
+• Key Metrics: [List]
+
+STATISTICAL SIGNIFICANCE:
+• Confidence Level: [%]
+• Lift: [Percentage]
+• P-Value: [Number]
+
+RECOMMENDATIONS:
+• Winner: [A/B]
+• Implementation: [Plan]
+• Next Tests: [Ideas]
+
+Detailed report: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "account-review-001",
+    subject: "Quarterly Account Review - [Company Name]",
+    category: "Customer Success",
+    body: `${EMAIL_CONSTANTS.SHORT_SALUTATION}Let's review your account performance for [Quarter/Year]:
+
+USAGE METRICS:
+• Active Users: [Number]
+• Feature Adoption: [Percentage]
+• Support Tickets: [Number]
+
+KEY ACHIEVEMENTS:
+1. [Achievement 1]
+2. [Achievement 2]
+3. [Achievement 3]
+
+OPPORTUNITIES:
+• Unused Features: [List]
+• Expansion Areas: [Possibilities]
+• Training Needs: [Topics]
+
+NEXT STEPS:
+1. Review Meeting: [Proposed Date/Time]
+2. Action Items: [List]
+3. Goals for Next Quarter: [Objectives]
+
+Please confirm your availability for the review call.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "remote-issue-001",
+    subject: "Remote Work Technical Issue Report",
+    category: "Remote Work",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}I am experiencing technical issues while working remotely:
+
+ISSUE DETAILS:
+• Type: [Connection/Hardware/Software]
+• Started: [Time/Date]
+• Frequency: [Constant/Intermittent]
+• Impact: [Work Effect]
+
+TROUBLESHOOTING DONE:
+• Steps Taken: [List Actions]
+• Results: [Outcomes]
+• Current Status: [State]
+
+SYSTEM INFO:
+• Device: [Details]
+• Software: [Versions]
+• Connection: [Speed/Type]
+
+URGENCY:
+[Impact Level]
+
+Available for troubleshooting:${EMAIL_CONSTANTS.FULL_SIGNATURE}`
   },
 
   // 📱 Mobile Device Management
@@ -1058,7 +1745,7 @@ APPROVALS REQUIRED:
 Please review and provide your approval for this replacement request.
 
 Best regards,
-[Your Name]
+[Name]
 [Position]
 [Department]
 [Contact Information]
@@ -1630,7 +2317,7 @@ Best regards.`
 
 Good day!
 
-Your request to change the password for account [Username] has been approved and completed.  
+Your request to change the password for account [User] has been approved and completed.  
 If you did not initiate this change, please notify IT support immediately.
 
 Best regards.`
@@ -1642,7 +2329,7 @@ Best regards.`
 
 Good day!
 
-A temporary password has been issued for your account [Username].  
+A temporary password has been issued for your account [User].  
 Temporary Password: [Password]
 
 Please log in and update your password at the earliest convenience.  
@@ -1656,7 +2343,7 @@ Best regards.`
 
 Good day!
 
-The account [Username] has been locked after multiple failed login attempts.  
+The account [User] has been locked after multiple failed login attempts.  
 
 Recommendation: Please contact IT support to reset your credentials.
 
@@ -1712,7 +2399,7 @@ Best regards.`
 
 Good day!
 
-Unusual login activity was detected on your account [Username].  
+Unusual login activity was detected on your account [User].  
 
 Details:  
 - Location: [City, Country]  
