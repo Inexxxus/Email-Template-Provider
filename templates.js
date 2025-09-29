@@ -163,6 +163,41 @@ Category Structure:
     - Compliance Reports
     - Data Breaches
     - Policy Updates
+
+26. 🔄 Change Management
+    - System Updates
+    - Process Changes
+    - Migration Plans
+    - Release Notes
+    - Impact Analysis
+
+27. 📅 Event Management
+    - Conference Planning
+    - Workshop Organization
+    - Training Sessions
+    - Webinar Setup
+    - Post-Event Reviews
+
+28. 📊 Resource Management
+    - Capacity Planning
+    - Resource Allocation
+    - Equipment Scheduling
+    - Budget Tracking
+    - Utilization Reports
+
+29. 🌱 Sustainability
+    - Green Initiatives
+    - Energy Efficiency
+    - Waste Reduction
+    - Environmental Reports
+    - Carbon Footprint
+
+30. 🚨 Crisis Management
+    - Emergency Response
+    - Business Continuity
+    - Incident Reports
+    - Recovery Plans
+    - Status Updates
 */
 
 const customTemplates = [
@@ -1199,6 +1234,1041 @@ ACTIONS REQUIRED:
 3. [Priority Action 3]${EMAIL_CONSTANTS.POSITION_SIGNATURE}
 
 Best regards.`
+  },
+
+  {
+    id: "change-request-001",
+    subject: "Change Request - [System/Process] Update",
+    category: "Change Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Please review the following change request:
+
+CHANGE DETAILS:
+• Type: [System/Process/Policy]
+• Priority: [High/Medium/Low]
+• Impact Level: [Critical/Major/Minor]
+• Requested By: [Name]
+
+SCOPE:
+• Systems Affected: [List]
+• Users Impacted: [Number/Groups]
+• Departments: [List]
+• Dependencies: [Related Systems]
+
+TIMELINE:
+• Requested Start: [Date/Time]
+• Duration: [Length]
+• Completion: [Target Date]
+• Rollback Window: [Duration]
+
+IMPLEMENTATION PLAN:
+1. Pre-Change Tasks:
+   • [Preparation Steps]
+   • [Backup Procedures]
+   • [Testing Requirements]
+
+2. Change Process:
+   • [Step-by-Step Plan]
+   • [Verification Points]
+   • [Success Criteria]
+
+3. Post-Change:
+   • [Validation Steps]
+   • [Monitoring Period]
+   • [Sign-off Process]
+
+RISK ASSESSMENT:
+• Potential Issues: [List]
+• Mitigation Plans: [Strategies]
+• Rollback Plan: [Steps]
+
+Please review and approve by [Date].${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "system-update-001",
+    subject: "System Update Notification - [System Name]",
+    category: "Change Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Important system update scheduled for [System Name]:
+
+UPDATE DETAILS:
+• System: [Name/Version]
+• Type: [Security/Feature/Maintenance]
+• Priority: [Level]
+• Duration: [Expected Time]
+
+SCHEDULE:
+• Start: [Date/Time]
+• End: [Date/Time]
+• Timezone: [Zone]
+
+USER IMPACT:
+• Service Interruption: [Yes/No]
+• Downtime: [Duration]
+• Affected Features: [List]
+
+PREPARATION REQUIRED:
+• Save Work: [Deadline]
+• Backup Data: [Instructions]
+• Close Applications: [List]
+
+POST-UPDATE:
+• Browser Cache Clear: [Required/Optional]
+• Application Restart: [Yes/No]
+• New Features: [Summary]
+
+SUPPORT:
+• Before Update: [Contact]
+• During Update: [Emergency Contact]
+• After Update: [Help Desk]
+
+Status updates will be posted at [URL].${EMAIL_CONSTANTS.DEPARTMENT_SIGNATURE}`
+  },
+
+  {
+    id: "migration-plan-001",
+    subject: "Data Migration Plan - [Project Name]",
+    category: "Change Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Details for the upcoming data migration:
+
+PROJECT OVERVIEW:
+• Source System: [Name/Version]
+• Target System: [Name/Version]
+• Data Volume: [Size]
+• Complexity: [Level]
+
+TIMELINE:
+• Planning Phase: [Dates]
+• Testing Phase: [Dates]
+• Migration Window: [Dates]
+• Validation Period: [Duration]
+
+DATA SCOPE:
+• Data Types: [Categories]
+• Record Count: [Numbers]
+• Time Range: [Period]
+• Special Cases: [List]
+
+MIGRATION STRATEGY:
+1. Pre-Migration:
+   • Data Cleanup: [Tasks]
+   • Validation Rules: [Criteria]
+   • Backup Strategy: [Method]
+
+2. During Migration:
+   • Processing Order: [Sequence]
+   • Checkpoints: [Intervals]
+   • Monitoring: [Tools]
+
+3. Post-Migration:
+   • Verification: [Process]
+   • Sign-off: [Requirements]
+   • Support Plan: [Details]
+
+CONTINGENCY PLAN:
+• Rollback Triggers: [Conditions]
+• Recovery Time: [Estimate]
+• Alternative Paths: [Options]
+
+Team assignments and detailed procedures attached.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "conference-plan-001",
+    subject: "Conference Planning - [Event Name]",
+    category: "Event Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Details for the upcoming [Event Name] conference:
+
+EVENT OVERVIEW:
+• Date: [Date Range]
+• Location: [Venue]
+• Expected Attendance: [Number]
+• Theme: [Description]
+
+SCHEDULE HIGHLIGHTS:
+Day 1 - [Date]
+• [Time]: [Session]
+• [Time]: [Session]
+• [Time]: [Session]
+
+Day 2 - [Date]
+• [Time]: [Session]
+• [Time]: [Session]
+• [Time]: [Session]
+
+LOGISTICS:
+• Registration Desk: [Location/Hours]
+• Main Hall: [Location/Capacity]
+• Breakout Rooms: [List/Capacity]
+• Technical Setup: [Requirements]
+
+SPEAKER INFORMATION:
+• Keynote: [Name/Topic]
+• Featured Speakers: [List]
+• Session Moderators: [List]
+
+CATERING:
+• Breakfast: [Menu/Time]
+• Lunch: [Menu/Time]
+• Refreshments: [Schedule]
+
+TECHNICAL REQUIREMENTS:
+• AV Equipment: [List]
+• Internet: [Setup]
+• Recording: [Requirements]
+
+Action items and responsibilities attached.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "workshop-org-001",
+    subject: "Workshop Organization - [Topic]",
+    category: "Event Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Workshop planning details for [Topic]:
+
+WORKSHOP DETAILS:
+• Title: [Name]
+• Date: [Date]
+• Time: [Duration]
+• Location: [Place/Platform]
+• Capacity: [Number]
+
+AGENDA:
+1. Introduction ([Time])
+   • Welcome
+   • Objectives
+   • Ice Breaker
+
+2. Main Sessions
+   • [Topic 1] ([Time])
+   • [Topic 2] ([Time])
+   • [Topic 3] ([Time])
+
+3. Activities
+   • [Exercise 1]: [Description]
+   • [Exercise 2]: [Description]
+   • [Group Work]: [Details]
+
+MATERIALS NEEDED:
+• Handouts: [List]
+• Equipment: [List]
+• Software: [Requirements]
+• Supplies: [List]
+
+PARTICIPANT PREP:
+• Prerequisites: [Requirements]
+• Pre-reading: [Materials]
+• Setup: [Instructions]
+
+FOLLOW-UP:
+• Feedback Forms: [Method]
+• Certificates: [Distribution]
+• Resources: [Access]
+
+Please confirm your role and requirements.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "webinar-setup-001",
+    subject: "Webinar Setup - [Topic]",
+    category: "Event Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Setup details for upcoming webinar:
+
+WEBINAR INFORMATION:
+• Title: [Name]
+• Date: [Date]
+• Time: [Time] ([Time Zone])
+• Platform: [Software]
+• Duration: [Length]
+
+TECHNICAL SETUP:
+• Platform Link: [URL]
+• Backup Link: [Alternative]
+• Testing Time: [Date/Time]
+• Recording: [Yes/No]
+
+ROLES:
+• Host: [Name]
+• Presenters: [Names]
+• Moderators: [Names]
+• Technical Support: [Contact]
+
+PRESENTATION FLOW:
+1. Introduction: [Time]
+2. Main Content: [Time]
+3. Q&A Session: [Time]
+4. Wrap-up: [Time]
+
+ENGAGEMENT TOOLS:
+• Polls: [Topics]
+• Q&A: [Format]
+• Chat: [Guidelines]
+• Breakout Rooms: [If Needed]
+
+PRE-EVENT CHECKLIST:
+• Slides Deadline: [Date]
+• Tech Check: [Date/Time]
+• Dry Run: [Date/Time]
+• Materials Ready: [List]
+
+Please complete setup verification by [Date].${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "resource-allocation-001",
+    subject: "Resource Allocation Plan - [Project/Department]",
+    category: "Resource Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Resource allocation plan for [Period]:
+
+RESOURCE SUMMARY:
+• Department: [Name]
+• Period: [Time Frame]
+• Total Capacity: [Hours/Units]
+• Available: [Amount]
+
+TEAM ALLOCATION:
+1. Project [Name]
+   • Team Members: [List]
+   • Hours/Week: [Number]
+   • Skills Required: [List]
+   • Duration: [Time Period]
+
+2. Project [Name]
+   • Team Members: [List]
+   • Hours/Week: [Number]
+   • Skills Required: [List]
+   • Duration: [Time Period]
+
+EQUIPMENT ALLOCATION:
+• Hardware: [Assignments]
+• Software Licenses: [Distribution]
+• Shared Resources: [Schedule]
+
+BUDGET ALLOCATION:
+• Project Budgets: [Amounts]
+• Operating Costs: [Estimates]
+• Reserve: [Amount]
+
+CONSTRAINTS:
+• Time Conflicts: [Details]
+• Resource Limits: [Specifics]
+• Dependencies: [List]
+
+Please review and approve allocations.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "capacity-plan-001",
+    subject: "Capacity Planning Report - [Department]",
+    category: "Resource Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Capacity planning analysis for [Period]:
+
+CURRENT CAPACITY:
+• Total FTE: [Number]
+• Available Hours: [Hours]
+• Utilization Rate: [Percentage]
+• Peak Load: [Metric]
+
+DEMAND FORECAST:
+• Expected Growth: [Percentage]
+• New Projects: [Number]
+• Additional Load: [Hours]
+• Peak Periods: [Dates]
+
+RESOURCE GAPS:
+1. Immediate Needs
+   • Skills: [Requirements]
+   • Quantity: [Number]
+   • Timeline: [Dates]
+
+2. Future Requirements
+   • Skills: [Projected Needs]
+   • Quantity: [Estimated]
+   • Timeline: [Planning Period]
+
+RECOMMENDATIONS:
+• Hiring Needs: [Positions]
+• Training Plans: [Programs]
+• Resource Shifts: [Adjustments]
+
+RISK ASSESSMENT:
+• Bottlenecks: [Identification]
+• Mitigation: [Strategies]
+• Contingencies: [Plans]
+
+Action plan attached for review.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "equipment-schedule-001",
+    subject: "Equipment Schedule Update - [Department]",
+    category: "Resource Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Updated equipment schedule for [Period]:
+
+EQUIPMENT ROSTER:
+• Category: [Type]
+• Total Units: [Number]
+• Available: [Number]
+• Under Maintenance: [Number]
+
+CURRENT ASSIGNMENTS:
+1. [Equipment Name]
+   • Assigned To: [User/Project]
+   • Duration: [Period]
+   • Location: [Place]
+   • Status: [Condition]
+
+2. [Equipment Name]
+   • Assigned To: [User/Project]
+   • Duration: [Period]
+   • Location: [Place]
+   • Status: [Condition]
+
+MAINTENANCE SCHEDULE:
+• Upcoming: [Dates/Units]
+• Duration: [Time]
+• Impact: [Users/Projects]
+
+BOOKING PROCESS:
+• Request Method: [Process]
+• Lead Time: [Duration]
+• Priority Rules: [Guidelines]
+
+Please confirm any schedule conflicts.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "utilization-report-001",
+    subject: "Resource Utilization Report - [Period]",
+    category: "Resource Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Resource utilization analysis for [Period]:
+
+OVERALL METRICS:
+• Average Utilization: [Percentage]
+• Peak Usage: [Percentage]
+• Idle Time: [Percentage]
+• Cost Efficiency: [Ratio]
+
+BREAKDOWN BY TYPE:
+1. Human Resources
+   • Team Utilization: [Percentage]
+   • Overtime Hours: [Number]
+   • Bench Time: [Hours]
+   • Skills Usage: [Distribution]
+
+2. Equipment
+   • Usage Rate: [Percentage]
+   • Downtime: [Hours]
+   • Maintenance Time: [Hours]
+   • Efficiency: [Rating]
+
+3. Software Licenses
+   • Active Users: [Number]
+   • Usage Patterns: [Analysis]
+   • Cost per User: [Amount]
+
+OPTIMIZATION OPPORTUNITIES:
+• Resource Shifts: [Recommendations]
+• Process Improvements: [Suggestions]
+• Cost Savings: [Estimates]
+
+NEXT STEPS:
+1. [Action Item]: [Timeline]
+2. [Action Item]: [Timeline]
+3. [Action Item]: [Timeline]
+
+Detailed analysis available in attached report.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "green-initiative-001",
+    subject: "Sustainability Initiative Announcement - [Initiative Name]",
+    category: "Sustainability",
+    body: `${EMAIL_CONSTANTS.ALL_STAFF_SALUTATION}We are excited to announce our new sustainability initiative:
+
+INITIATIVE OVERVIEW:
+• Program: [Name]
+• Launch Date: [Date]
+• Goals: [Objectives]
+• Impact Areas: [Departments/Processes]
+
+KEY COMPONENTS:
+1. Energy Conservation
+   • Target: [Reduction Goal]
+   • Methods: [Strategies]
+   • Timeline: [Implementation Schedule]
+
+2. Waste Reduction
+   • Current Status: [Metrics]
+   • Targets: [Goals]
+   • Action Steps: [Implementation]
+
+3. Resource Efficiency
+   • Focus Areas: [Resources]
+   • Improvements: [Methods]
+   • Expected Savings: [Estimates]
+
+EMPLOYEE PARTICIPATION:
+• Training Sessions: [Dates]
+• Resources Available: [Materials]
+• Support Contacts: [Names/Roles]
+
+TRACKING & REPORTING:
+• Metrics: [KPIs]
+• Reporting: [Schedule]
+• Recognition: [Programs]
+
+Join us in making a positive environmental impact!${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "eco-metrics-001",
+    subject: "Environmental Impact Report - [Period]",
+    category: "Sustainability",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Environmental impact metrics for [Period]:
+
+PERFORMANCE SUMMARY:
+• Carbon Footprint: [Metric]
+• Energy Usage: [Consumption]
+• Waste Generation: [Volume]
+• Water Usage: [Amount]
+
+DETAILED METRICS:
+1. Energy Consumption
+   • Electricity: [kWh]
+   • Gas: [Units]
+   • Renewable %: [Percentage]
+   • Cost: [Amount]
+
+2. Waste Management
+   • Recycling Rate: [Percentage]
+   • Landfill: [Volume]
+   • Composting: [Amount]
+   • Hazardous: [Volume]
+
+3. Resource Usage
+   • Water: [Gallons]
+   • Paper: [Reams]
+   • Supplies: [Units]
+
+IMPROVEMENT TRENDS:
+• YoY Change: [Percentage]
+• Cost Savings: [Amount]
+• Carbon Reduction: [Metric]
+
+RECOMMENDATIONS:
+1. [Area]: [Action Steps]
+2. [Area]: [Action Steps]
+3. [Area]: [Action Steps]
+
+Complete report attached.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "sustainability-update-001",
+    subject: "Sustainability Program Update - [Quarter]",
+    category: "Sustainability",
+    body: `${EMAIL_CONSTANTS.ALL_STAFF_SALUTATION}Quarterly update on our sustainability initiatives:
+
+ACHIEVEMENTS:
+1. Energy Conservation
+   • Results: [Metrics]
+   • Savings: [Amount]
+   • Impact: [Environmental]
+
+2. Waste Reduction
+   • Diversion Rate: [Percentage]
+   • Improvements: [Changes]
+   • Cost Savings: [Amount]
+
+3. Green Initiatives
+   • Programs: [List]
+   • Participation: [Rate]
+   • Outcomes: [Results]
+
+UPCOMING INITIATIVES:
+• Project: [Name/Description]
+• Timeline: [Schedule]
+• Goals: [Targets]
+• Support Needed: [Resources]
+
+RECOGNITION:
+• Awards: [Achievements]
+• Team Efforts: [Highlights]
+• Best Practices: [Examples]
+
+GET INVOLVED:
+• Opportunities: [Programs]
+• Contact: [Information]
+• Resources: [Links]
+
+Thank you for your continued support!${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "green-procurement-001",
+    subject: "Sustainable Procurement Guidelines Update",
+    category: "Sustainability",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Updated sustainable procurement guidelines:
+
+POLICY UPDATES:
+• Effective Date: [Date]
+• Scope: [Departments]
+• Requirements: [Standards]
+
+SUPPLIER CRITERIA:
+1. Environmental Standards
+   • Certifications: [Requirements]
+   • Practices: [Guidelines]
+   • Reporting: [Methods]
+
+2. Product Requirements
+   • Materials: [Standards]
+   • Packaging: [Guidelines]
+   • Disposal: [Methods]
+
+3. Service Providers
+   • Practices: [Requirements]
+   • Documentation: [Needs]
+   • Monitoring: [Process]
+
+EVALUATION PROCESS:
+• Criteria: [Metrics]
+• Scoring: [System]
+• Review: [Process]
+
+IMPLEMENTATION:
+• Timeline: [Schedule]
+• Training: [Resources]
+• Support: [Contacts]
+
+Please review and implement immediately.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "crisis-alert-001",
+    subject: "URGENT: Crisis Situation Alert - [Incident Type]",
+    category: "Crisis Management",
+    body: `${EMAIL_CONSTANTS.EMERGENCY_SALUTATION}CRITICAL INCIDENT NOTIFICATION
+
+INCIDENT DETAILS:
+• Type: [Description]
+• Location: [Where]
+• Time: [When]
+• Severity: [Level]
+
+IMMEDIATE ACTIONS:
+1. Current Status
+   • Situation: [Description]
+   • Actions Taken: [Steps]
+   • Resources Deployed: [List]
+
+2. Required Response
+   • Actions: [Instructions]
+   • Personnel: [Roles]
+   • Resources: [Needs]
+
+COMMUNICATION PROTOCOL:
+• Updates: [Frequency]
+• Channels: [Methods]
+• Contact: [Information]
+
+SAFETY MEASURES:
+• Precautions: [Steps]
+• Restrictions: [Rules]
+• Support: [Resources]
+
+NEXT UPDATE:
+• Time: [When]
+• Channel: [How]
+
+Stay alert and follow protocols.${EMAIL_CONSTANTS.EMERGENCY_SIGNATURE}`
+  },
+
+  {
+    id: "incident-update-001",
+    subject: "Crisis Incident Update #[Number] - [Incident Type]",
+    category: "Crisis Management",
+    body: `${EMAIL_CONSTANTS.EMERGENCY_SALUTATION}SITUATION UPDATE #[Number]
+
+CURRENT STATUS:
+• Condition: [Status]
+• Time: [Timestamp]
+• Changes: [Updates]
+• Risk Level: [Assessment]
+
+ACTIONS IN PROGRESS:
+1. Response Teams
+   • Activities: [Actions]
+   • Location: [Where]
+   • Progress: [Status]
+
+2. Support Operations
+   • Services: [Available]
+   • Resources: [Deployed]
+   • Coverage: [Areas]
+
+IMPACT ASSESSMENT:
+• Affected Areas: [Locations]
+• Personnel: [Numbers]
+• Operations: [Status]
+• Duration: [Estimate]
+
+NEXT STEPS:
+1. Immediate: [Actions]
+2. Short-term: [Plans]
+3. Recovery: [Strategy]
+
+SUPPORT RESOURCES:
+• Emergency: [Contacts]
+• Information: [Sources]
+• Assistance: [Services]
+
+Next update scheduled: [Time]${EMAIL_CONSTANTS.EMERGENCY_SIGNATURE}`
+  },
+
+  {
+    id: "recovery-plan-001",
+    subject: "Crisis Recovery Plan - [Incident Type]",
+    category: "Crisis Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Crisis recovery plan outline:
+
+INCIDENT OVERVIEW:
+• Event: [Description]
+• Duration: [Time Period]
+• Impact: [Assessment]
+• Status: [Current]
+
+RECOVERY PHASES:
+1. Immediate Actions
+   • Tasks: [List]
+   • Timeline: [Schedule]
+   • Resources: [Needs]
+   • Owner: [Role]
+
+2. Short-term Recovery
+   • Priorities: [List]
+   • Actions: [Steps]
+   • Timeline: [Dates]
+   • Resources: [Requirements]
+
+3. Long-term Restoration
+   • Goals: [Objectives]
+   • Strategy: [Approach]
+   • Timeline: [Schedule]
+   • Resources: [Needs]
+
+RESOURCE ALLOCATION:
+• Personnel: [Assignments]
+• Equipment: [Requirements]
+• Budget: [Allocation]
+
+MONITORING & CONTROL:
+• Metrics: [KPIs]
+• Reporting: [Schedule]
+• Reviews: [Timeline]
+
+Please review and provide feedback.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "post-crisis-001",
+    subject: "Post-Crisis Analysis Report - [Incident Type]",
+    category: "Crisis Management",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Post-crisis analysis and recommendations:
+
+INCIDENT SUMMARY:
+• Event: [Description]
+• Timeline: [Sequence]
+• Impact: [Assessment]
+• Resolution: [Outcome]
+
+RESPONSE EVALUATION:
+1. Initial Response
+   • Actions: [Steps]
+   • Timing: [Analysis]
+   • Effectiveness: [Rating]
+   • Gaps: [Issues]
+
+2. Crisis Management
+   • Protocol: [Assessment]
+   • Communication: [Review]
+   • Resources: [Adequacy]
+   • Leadership: [Evaluation]
+
+3. Recovery Process
+   • Strategy: [Review]
+   • Execution: [Assessment]
+   • Timeline: [Analysis]
+   • Results: [Outcomes]
+
+LESSONS LEARNED:
+• Strengths: [Points]
+• Weaknesses: [Areas]
+• Opportunities: [Improvements]
+• Threats: [Risks]
+
+RECOMMENDATIONS:
+1. [Area]: [Action Items]
+2. [Area]: [Action Items]
+3. [Area]: [Action Items]
+
+Detailed report attached.${EMAIL_CONSTANTS.FULL_SIGNATURE}`
+  },
+
+  {
+    id: "software-release-001",
+    subject: "New Software Release Announcement - Version [X.X.X]",
+    category: "Software Updates",
+    body: `${EMAIL_CONSTANTS.ALL_STAFF_SALUTATION}We are pleased to announce the release of version [X.X.X]:
+
+RELEASE HIGHLIGHTS:
+• Version: [X.X.X]
+• Release Date: [Date]
+• Environment: [Production/Staging]
+• Priority: [Critical/Major/Minor]
+
+KEY UPDATES:
+1. New Features
+   • [Feature Name]: [Description]
+   • [Feature Name]: [Description]
+   • [Feature Name]: [Description]
+
+2. Improvements
+   • [Enhancement]: [Details]
+   • [Enhancement]: [Details]
+   • [Enhancement]: [Details]
+
+3. Bug Fixes
+   • [Issue]: [Resolution]
+   • [Issue]: [Resolution]
+   • [Issue]: [Resolution]
+
+DEPLOYMENT INFORMATION:
+• Schedule: [Timeline]
+• Impact: [Service Effects]
+• Duration: [Time Period]
+• Rollback Plan: [Strategy]
+
+ACTION REQUIRED:
+• [Step 1]: [Instructions]
+• [Step 2]: [Instructions]
+• [Step 3]: [Instructions]
+
+SUPPORT:
+• Documentation: [Link]
+• Contact: [Team/Person]
+• Hours: [Availability]
+
+Full release notes available at: [Link]${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "system-maintenance-001",
+    subject: "Scheduled System Maintenance Notice",
+    category: "Software Updates",
+    body: `${EMAIL_CONSTANTS.ALL_STAFF_SALUTATION}Important system maintenance notification:
+
+MAINTENANCE DETAILS:
+• Date: [Date]
+• Time: [Start Time] - [End Time]
+• Duration: [Hours/Minutes]
+• Systems Affected: [List]
+
+SCOPE OF WORK:
+1. Primary Activities
+   • [Task]: [Description]
+   • [Task]: [Description]
+   • [Task]: [Description]
+
+2. Impact Assessment
+   • Services Affected: [List]
+   • User Impact: [Details]
+   • Business Impact: [Level]
+
+PREPARATION REQUIRED:
+• Before: [Actions]
+• During: [Guidelines]
+• After: [Steps]
+
+CONTINGENCY PLAN:
+• Rollback Procedure: [Steps]
+• Emergency Contact: [Details]
+• Alternative Systems: [Options]
+
+We apologize for any inconvenience.${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "patch-update-001",
+    subject: "Security Patch Update - [System Name]",
+    category: "Software Updates",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Critical security patch information:
+
+PATCH DETAILS:
+• Update Type: [Security/Bug Fix]
+• Version: [Number]
+• Priority: [Critical/High/Medium/Low]
+• Systems: [Affected Systems]
+
+SECURITY IMPROVEMENTS:
+1. Vulnerabilities Addressed
+   • [CVE-ID]: [Description]
+   • [CVE-ID]: [Description]
+   • Impact: [Assessment]
+
+2. Security Enhancements
+   • [Feature]: [Details]
+   • [Feature]: [Details]
+   • [Feature]: [Details]
+
+DEPLOYMENT SCHEDULE:
+• Release: [Date/Time]
+• Installation: [Process]
+• Verification: [Steps]
+
+USER ACTIONS:
+1. Required Steps
+   • [Action]: [Instructions]
+   • [Action]: [Instructions]
+   • [Action]: [Instructions]
+
+2. Verification Process
+   • [Check]: [Method]
+   • [Check]: [Method]
+
+Please implement immediately.${EMAIL_CONSTANTS.EMERGENCY_SIGNATURE}`
+  },
+
+  {
+    id: "feature-preview-001",
+    subject: "Beta Feature Preview - [Feature Name]",
+    category: "Software Updates",
+    body: `${EMAIL_CONSTANTS.DEPARTMENT_SALUTATION}Exciting new feature preview announcement:
+
+FEATURE OVERVIEW:
+• Name: [Feature]
+• Status: Beta/Preview
+• Access: [Requirements]
+• Timeline: [Dates]
+
+KEY CAPABILITIES:
+1. Core Functions
+   • [Function]: [Description]
+   • [Function]: [Description]
+   • [Function]: [Description]
+
+2. Benefits
+   • [Benefit]: [Details]
+   • [Benefit]: [Details]
+   • [Benefit]: [Details]
+
+PARTICIPATION DETAILS:
+• Eligibility: [Criteria]
+• Registration: [Process]
+• Feedback: [Methods]
+
+TESTING GUIDELINES:
+1. Setup
+   • [Step]: [Instructions]
+   • [Step]: [Instructions]
+   • [Step]: [Instructions]
+
+2. Known Limitations
+   • [Limitation]: [Details]
+   • [Limitation]: [Details]
+
+SUPPORT:
+• Documentation: [Link]
+• Contact: [Details]
+• Office Hours: [Times]
+
+Join us in shaping this feature!${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "post-event-001",
+    subject: "Post-Event Review - [Event Name]",
+    category: "Event Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}Review summary for [Event Name]:
+
+EVENT METRICS:
+• Total Attendance: [Number]
+• Engagement Rate: [Percentage]
+• Satisfaction Score: [Rating]
+• Technical Issues: [Count]
+
+FEEDBACK SUMMARY:
+1. Highlights
+   • [Positive Point 1]
+   • [Positive Point 2]
+   • [Positive Point 3]
+
+2. Areas for Improvement
+   • [Area 1]: [Suggestion]
+   • [Area 2]: [Suggestion]
+   • [Area 3]: [Suggestion]
+
+BUDGET REVIEW:
+• Planned: [Amount]
+• Actual: [Amount]
+• Variance: [Difference]
+• Key Expenses: [List]
+
+FOLLOW-UP ACTIONS:
+1. Immediate
+   • [Action Item]: [Owner]
+   • [Action Item]: [Owner]
+
+2. Long-term
+   • [Strategy]: [Timeline]
+   • [Strategy]: [Timeline]
+
+Materials and recordings available at [Link].${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
+  },
+
+  {
+    id: "release-notes-001",
+    subject: "Release Notes - Version [X.X.X]",
+    category: "Change Management",
+    body: `${EMAIL_CONSTANTS.TEAM_SALUTATION}New release details for version [X.X.X]:
+
+RELEASE INFORMATION:
+• Version: [Number]
+• Release Date: [Date]
+• Type: [Major/Minor/Patch]
+• Environment: [Prod/Stage/Dev]
+
+NEW FEATURES:
+1. [Feature Name]
+   • Description: [Details]
+   • Benefits: [Improvements]
+   • Usage: [Instructions]
+
+2. [Feature Name]
+   • Description: [Details]
+   • Benefits: [Improvements]
+   • Usage: [Instructions]
+
+IMPROVEMENTS:
+• [Enhancement 1]: [Description]
+• [Enhancement 2]: [Description]
+• [Enhancement 3]: [Description]
+
+BUG FIXES:
+• [Issue Fixed]: [Resolution]
+• [Issue Fixed]: [Resolution]
+• [Issue Fixed]: [Resolution]
+
+KNOWN ISSUES:
+• [Issue]: [Workaround]
+• [Issue]: [Workaround]
+
+TECHNICAL REQUIREMENTS:
+• System Requirements: [Specs]
+• Dependencies: [List]
+• Browser Support: [Versions]
+
+Documentation updates available at [URL].${EMAIL_CONSTANTS.POSITION_SIGNATURE}`
   },
 
   {
